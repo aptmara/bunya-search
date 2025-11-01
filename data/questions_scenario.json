@@ -1,0 +1,538 @@
+﻿{
+  "metadata": {
+    "version": "2024-11-02",
+    "language": "ja",
+    "scoreScheme": {
+      "primary": 3.0,
+      "secondary": 1.5
+    }
+  },
+  "items": [
+    {
+      "id": "SC-01",
+      "required": true,
+      "title": "大学祭プロジェクト",
+      "scenario": "大学祭で新しい企画を任されました。最も魅力を感じる役割を選んでください。",
+      "options": [
+        {
+          "key": "A",
+          "label": "研究成果を分かりやすく伝える講演を企画し、来場者に学問の魅力を届ける。",
+          "primary": {"axis": "career", "category": "研究職", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "学術探究", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "講演企画", "weight": 1.0}, {"name": "科学コミュニケーション", "weight": 0.9}, {"name": "学術広報", "weight": 1.0}, {"name": "プレゼンテーション", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "最新テクノロジーの体験ブースを開発し、試作品で来場者に実演する。",
+          "primary": {"axis": "career", "category": "技術開発", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "プロトタイピング", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "体験設計", "weight": 1.0}, {"name": "デモンストレーション", "weight": 0.9}, {"name": "技術実演", "weight": 1.0}, {"name": "インタラクティブ", "weight": 0.8}]
+        },
+        {
+          "key": "C",
+          "label": "地域と協働したフェスティバルを企画し、文化的な魅力を発信する。",
+          "primary": {"axis": "career", "category": "文化産業", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "地域密着", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "地域連携", "weight": 1.0}, {"name": "イベントプロデュース", "weight": 0.9}, {"name": "イベント運営", "weight": 1.0}, {"name": "文化発信", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "SC-02",
+      "required": true,
+      "title": "長期プロジェクト配属",
+      "scenario": "半年間の学部横断プロジェクトで配属先を選びます。どこで成長したいですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "新素材の特性評価を行う研究室で、実験と解析を担当する。",
+          "primary": {"axis": "interest", "category": "化学材料", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "実験操作", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "材料研究", "weight": 1.0}, {"name": "物性評価", "weight": 0.9}, {"name": "実験設計", "weight": 1.0}, {"name": "データ解析", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "地域課題を調査し、政策提言レポートを作成するチームに参加する。",
+          "primary": {"axis": "career", "category": "公共政策", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "公共性", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "政策分析", "weight": 1.0}, {"name": "社会調査", "weight": 0.9}, {"name": "フィールドワーク", "weight": 1.0}, {"name": "レポート作成", "weight": 0.8}]
+        },
+        {
+          "key": "C",
+          "label": "XR技術を活用した体験コンテンツを制作するチームで創作に取り組む。",
+          "primary": {"axis": "interest", "category": "デジタル創造", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "表現制作", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "XR", "weight": 1.0}, {"name": "VR/AR", "weight": 0.9}, {"name": "クリエイティブ制作", "weight": 1.0}, {"name": "コンテンツ開発", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "SC-03",
+      "required": true,
+      "title": "夏季インターン先",
+      "scenario": "夏休みに参加するインターン先を選ぶとしたら、どれを選びますか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "金融データを分析し、経済動向のレポートを作成する企業で働く。",
+          "primary": {"axis": "interest", "category": "経済ビジネス", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "数理解析", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "金融", "weight": 1.0}, {"name": "エコノミスト", "weight": 0.9}, {"name": "データ分析", "weight": 1.0}, {"name": "市場分析", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "NGOとともに現地の社会課題に取り組み、支援プログラムを設計する。",
+          "primary": {"axis": "values", "category": "社会貢献", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "career", "category": "国際協力", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "NGO", "weight": 1.0}, {"name": "国際開発", "weight": 0.9}, {"name": "国際協働", "weight": 1.0}, {"name": "プログラム設計", "weight": 0.8}]
+        },
+        {
+          "key": "C",
+          "label": "ゲーム企画会社で世界観設定とシナリオ制作を担当する。",
+          "primary": {"axis": "interest", "category": "芸術実践", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "表現制作", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "ゲームデザイン", "weight": 1.0}, {"name": "世界観設定", "weight": 0.9}, {"name": "シナリオライティング", "weight": 1.0}, {"name": "物語創作", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "SC-04",
+      "required": true,
+      "title": "研究テーマの選択",
+      "scenario": "卒業研究のテーマ候補が3つ提示されました。どれに最もワクワクしますか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "未解決の理論課題に取り組み、新しいモデルを提案する。",
+          "primary": {"axis": "interest", "category": "物理数理", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "learning_style", "category": "理論重視型", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "理論研究", "weight": 1.0}, {"name": "基礎研究", "weight": 0.9}, {"name": "数理モデル", "weight": 1.0}, {"name": "抽象化", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "医療機器の性能を評価し、臨床応用につなげる研究を行う。",
+          "primary": {"axis": "interest", "category": "生命医科学", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "career", "category": "専門職", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "医療機器", "weight": 1.0}, {"name": "臨床工学", "weight": 0.9}, {"name": "臨床応用", "weight": 1.0}, {"name": "性能評価", "weight": 0.8}]
+        },
+        {
+          "key": "C",
+          "label": "環境政策の効果をデータで検証し、改善提案をまとめる。",
+          "primary": {"axis": "interest", "category": "環境科学", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "公共性", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "環境政策", "weight": 1.0}, {"name": "政策評価", "weight": 0.9}, {"name": "データ評価", "weight": 1.0}, {"name": "EBPM", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "SC-05",
+      "required": true,
+      "title": "課題解決ハッカソン",
+      "scenario": "24時間の課題解決ハッカソンに参加します。どの役割に挑戦しますか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "ソフトウェア試作品を素早く開発し、性能デモをまとめる。",
+          "primary": {"axis": "activity", "category": "プロトタイピング", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "interest", "category": "情報科学", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "試作開発", "weight": 1.0}, {"name": "ハッカソン", "weight": 0.9}, {"name": "エンジニアリング", "weight": 1.0}, {"name": "アジャイル", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "社会調査の結果を分析し、課題解決の提案資料を作成する。",
+          "primary": {"axis": "interest", "category": "社会分析", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "数理解析", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "調査分析", "weight": 1.0}, {"name": "データ分析", "weight": 0.9}, {"name": "提案資料", "weight": 1.0}, {"name": "課題解決", "weight": 0.8}]
+        },
+        {
+          "key": "C",
+          "label": "来場者が体験できる展示を演出し、価値を体感してもらう。",
+          "primary": {"axis": "career", "category": "文化産業", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "表現制作", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "演出", "weight": 1.0}, {"name": "インスタレーション", "weight": 0.9}, {"name": "体験デザイン", "weight": 1.0}, {"name": "空間デザイン", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "SC-06",
+      "required": true,
+      "title": "海外留学の目的",
+      "scenario": "半年間の海外留学プログラムに参加するなら、どの目的が最も近いですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "世界トップレベルの研究室で最先端の知識と技術を学ぶ。",
+          "primary": {"axis": "career", "category": "研究職", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "学術探究", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "海外研究", "weight": 1.0}, {"name": "留学", "weight": 0.9}, {"name": "最先端技術", "weight": 1.0}, {"name": "専門性", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "社会起業の実践を学び、新規事業の立ち上げ方を習得する。",
+          "primary": {"axis": "career", "category": "ビジネス起業", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "革新挑戦", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "社会起業", "weight": 1.0}, {"name": "アントレプレナーシップ", "weight": 0.9}, {"name": "ビジネスプラン", "weight": 1.0}, {"name": "新規事業", "weight": 0.8}]
+        },
+        {
+          "key": "C",
+          "label": "文化芸術の交流を通じて表現の幅を広げ、国際ネットワークを作る。",
+          "primary": {"axis": "career", "category": "文化産業", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "グローバル", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "文化交流", "weight": 1.0}, {"name": "アートマネジメント", "weight": 0.9}, {"name": "ネットワーキング", "weight": 1.0}, {"name": "国際関係", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "SC-07",
+      "required": false,
+      "title": "キャリアディスカッション",
+      "scenario": "業界の先輩たちとキャリアについて語り合う場で、どの未来像を語りたいですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "研究所で新しい知を生み出し、論文や特許で社会に貢献する。",
+          "primary": {"axis": "career", "category": "研究職", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "学術探究", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "研究所", "weight": 1.0}, {"name": "R&D", "weight": 0.9}, {"name": "知の創出", "weight": 1.0}, {"name": "特許", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "行政や政策形成の現場で制度を改善し、人々の暮らしを支える。",
+          "primary": {"axis": "career", "category": "公共政策", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "公共性", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "政策形成", "weight": 1.0}, {"name": "公務員", "weight": 0.9}, {"name": "社会貢献", "weight": 1.0}, {"name": "制度設計", "weight": 0.8}]
+        },
+        {
+          "key": "C",
+          "label": "スタートアップでプロダクトを立ち上げ、世界に挑戦する。",
+          "primary": {"axis": "career", "category": "ビジネス起業", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "革新挑戦", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "スタートアップ", "weight": 1.0}, {"name": "起業", "weight": 0.9}, {"name": "グロース", "weight": 1.0}, {"name": "プロダクト開発", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "SC-08",
+      "required": false,
+      "title": "卒業制作の方向性",
+      "scenario": "卒業制作で取り組むテーマを選びます。最も惹かれるのはどれですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "大量データを分析し、社会課題を可視化するダッシュボードを構築する。",
+          "primary": {"axis": "activity", "category": "数理解析", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "interest", "category": "情報科学", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "データ可視化", "weight": 1.0}, {"name": "データジャーナリズム", "weight": 0.9}, {"name": "ダッシュボード", "weight": 1.0}, {"name": "BI", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "ドキュメンタリー映像を制作し、社会のリアルな声を伝える。",
+          "primary": {"axis": "interest", "category": "芸術実践", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "文化保全", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "映像制作", "weight": 1.0}, {"name": "ジャーナリズム", "weight": 0.9}, {"name": "ドキュメンタリー", "weight": 1.0}, {"name": "社会派", "weight": 0.8}]
+        },
+        {
+          "key": "C",
+          "label": "教育アプリを開発し、学習者に合わせた学びの体験をデザインする。",
+          "primary": {"axis": "career", "category": "教育支援", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "interest", "category": "教育革新", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "EdTech", "weight": 1.0}, {"name": "教育工学", "weight": 0.9}, {"name": "学習デザイン", "weight": 1.0}, {"name": "UI/UX", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "SC-09",
+      "required": false,
+      "title": "社会貢献ボランティア",
+      "scenario": "週末のボランティア活動に参加します。どの活動を選びますか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "病院で患者さんや家族のサポートを行い、医療スタッフを支援する。",
+          "primary": {"axis": "career", "category": "専門職", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "社会貢献", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "医療支援", "weight": 1.0}, {"name": "福祉", "weight": 0.9}, {"name": "患者サポート", "weight": 1.0}, {"name": "ボランティア", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "環境調査ツアーに参加し、自然保護のデータ収集を手伝う。",
+          "primary": {"axis": "interest", "category": "環境科学", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "フィールドワーク", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "環境調査", "weight": 1.0}, {"name": "市民科学", "weight": 0.9}, {"name": "自然保護", "weight": 1.0}, {"name": "データ収集", "weight": 0.8}]
+        },
+        {
+          "key": "C",
+          "label": "子ども向けワークショップを運営し、創造的な体験を提供する。",
+          "primary": {"axis": "career", "category": "教育支援", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "ファシリテーション", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "児童支援", "weight": 1.0}, {"name": "教育普及", "weight": 0.9}, {"name": "ワークショップ", "weight": 1.0}, {"name": "創造性教育", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "SC-10",
+      "required": false,
+      "title": "10年後の目標",
+      "scenario": "10年後にどのような成果を達成していたいか、最も近いものを選んでください。",
+      "options": [
+        {
+          "key": "A",
+          "label": "国際的な学術誌に研究成果を発表し、分野をリードしている。",
+          "primary": {"axis": "career", "category": "研究職", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "学術探究", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "国際誌", "weight": 1.0}, {"name": "トップジャーナル", "weight": 0.9}, {"name": "研究リーダー", "weight": 1.0}, {"name": "論文執筆", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "企業で新規事業を成功させ、世界中のユーザーに価値を届けている。",
+          "primary": {"axis": "career", "category": "技術開発", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "革新挑戦", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "新規事業", "weight": 1.0}, {"name": "事業開発", "weight": 0.9}, {"name": "グローバル展開", "weight": 1.0}, {"name": "プロダクトマネジメント", "weight": 0.8}]
+        },
+        {
+          "key": "C",
+          "label": "国際機関と協働し、世界規模の課題解決に貢献している。",
+          "primary": {"axis": "career", "category": "国際協力", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "グローバル", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "国際機関", "weight": 1.0}, {"name": "国連", "weight": 0.9}, {"name": "課題解決", "weight": 1.0}, {"name": "グローバルイシュー", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "SC-11",
+      "required": false,
+      "title": "インターン成果発表会",
+      "scenario": "インターン最終日に成果発表の場があります。どの発表スタイルに最も惹かれますか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "研究ポスターで仮説検証のプロセスを丁寧に紹介する。",
+          "primary": {"axis": "activity", "category": "ドキュメンテーション", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "career", "category": "研究職", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "ポスター発表", "weight": 1.0}, {"name": "研究報告", "weight": 1.0}, {"name": "学会発表", "weight": 0.9}, {"name": "論理的説明", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "事業アイデアのピッチを行い、投資家に価値提案を伝える。",
+          "primary": {"axis": "career", "category": "ビジネス起業", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "経済成果", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "ビジネスピッチ", "weight": 1.0}, {"name": "プレゼンテーション", "weight": 0.9}, {"name": "価値提案", "weight": 1.0}, {"name": "説得力", "weight": 0.8}]
+        },
+        {
+          "key": "C",
+          "label": "演出を工夫した映像や作品で体験を共有する。",
+          "primary": {"axis": "interest", "category": "芸術実践", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "表現制作", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "映像演出", "weight": 1.0}, {"name": "ストーリーテリング", "weight": 0.9}, {"name": "作品発表", "weight": 1.0}, {"name": "体験共有", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "SC-12",
+      "required": false,
+      "title": "学部横断イノベーション",
+      "scenario": "複数学部によるイノベーションプログラムに参加します。どのテーマで力を発揮したいですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "バイオテクノロジーを活用したヘルステックプロトタイプを開発する。",
+          "primary": {"axis": "interest", "category": "生命医科学", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "プロトタイピング", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "バイオテクノロジー", "weight": 1.0}, {"name": "ヘルステック", "weight": 1.0}, {"name": "応用研究", "weight": 0.9}, {"name": "プロトタイプ開発", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "スマートシティの市民参加施策を共創し、実証計画をまとめる。",
+          "primary": {"axis": "interest", "category": "デザイン思考", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "地域密着", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "スマートシティ", "weight": 1.0}, {"name": "市民参加", "weight": 0.9}, {"name": "共創", "weight": 1.0}, {"name": "実証実験", "weight": 0.8}]
+        },
+        {
+          "key": "C",
+          "label": "文化資産をデジタルアーカイブ化し、公開プラットフォームを設計する。",
+          "primary": {"axis": "interest", "category": "人文探究", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "ドキュメンテーション", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "デジタルアーカイブ", "weight": 1.0}, {"name": "デジタルヒューマニティーズ", "weight": 0.9}, {"name": "文化資産", "weight": 1.0}, {"name": "プラットフォーム設計", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "SC-13",
+      "required": false,
+      "title": "地域課題チャレンジ",
+      "scenario": "地域課題解決のコンテストに参加します。どの課題に挑戦したいですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "スマート農業を導入し、地元農家の生産性向上を支援する。",
+          "primary": {"axis": "interest", "category": "農環境", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "持続可能性", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "スマート農業", "weight": 1.0}, {"name": "アグリテック", "weight": 0.9}, {"name": "地域支援", "weight": 1.0}, {"name": "生産性向上", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "伝統文化と観光を融合したイベントで地域経済を活性化する。",
+          "primary": {"axis": "career", "category": "文化産業", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "地域密着", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "文化イベント", "weight": 1.0}, {"name": "観光", "weight": 0.9}, {"name": "地域活性", "weight": 1.0}, {"name": "伝統文化", "weight": 0.8}]
+        },
+        {
+          "key": "C",
+          "label": "福祉サービスの拡充計画を作成し、地域包括ケアを強化する。",
+          "primary": {"axis": "values", "category": "社会貢献", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "career", "category": "教育支援", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "福祉計画", "weight": 1.0}, {"name": "ソーシャルワーク", "weight": 0.9}, {"name": "地域ケア", "weight": 1.0}, {"name": "高齢化社会", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "SC-14",
+      "required": false,
+      "title": "新規授業開発",
+      "scenario": "新しい授業を企画することになりました。どの方向性で設計しますか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "学習データを活用して、個別最適化されたアダプティブ授業を構築する。",
+          "primary": {"axis": "interest", "category": "教育革新", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "数理解析", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "アダプティブ学習", "weight": 1.0}, {"name": "教育データ", "weight": 1.0}, {"name": "個別最適化", "weight": 0.9}, {"name": "EdTech", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "プロジェクト型学習で地域課題を扱い、実践的なチームワークを育む。",
+          "primary": {"axis": "values", "category": "地域密着", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "フィールドワーク", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "PBL", "weight": 1.0}, {"name": "アクティブラーニング", "weight": 0.9}, {"name": "地域課題学習", "weight": 1.0}, {"name": "チームワーク", "weight": 0.8}]
+        },
+        {
+          "key": "C",
+          "label": "芸術表現を取り入れ、感性を刺激するクリエイティブ授業を設計する。",
+          "primary": {"axis": "interest", "category": "芸術実践", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "表現制作", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "芸術教育", "weight": 1.0}, {"name": "情操教育", "weight": 0.9}, {"name": "創造性", "weight": 1.0}, {"name": "ワークショップ", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "SC-15",
+      "required": false,
+      "title": "未来の職場シミュレーション",
+      "scenario": "5年後の職場を想像してみてください。最もワクワクする未来像はどれですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "研究室を率いてチームをまとめ、次々と新しい知見を発表している。",
+          "primary": {"axis": "career", "category": "研究職", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "learning_style", "category": "継続改善型", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "研究リーダー", "weight": 1.0}, {"name": "PI", "weight": 0.9}, {"name": "マネジメント", "weight": 1.0}, {"name": "論文", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "政策アナリストとして社会課題を分析し、解決策を提案している。",
+          "primary": {"axis": "career", "category": "公共政策", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "公共性", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "政策分析", "weight": 1.0}, {"name": "シンクタンク", "weight": 0.9}, {"name": "提言", "weight": 1.0}, {"name": "アナリスト", "weight": 0.8}]
+        },
+        {
+          "key": "C",
+          "label": "UXリードとして多職種チームを束ね、ユーザー中心のサービスを創出している。",
+          "primary": {"axis": "career", "category": "プロダクトマネジメント", "score": 3.0, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "デザイン思考", "score": 1.5, "weight": 1.0}
+          ],
+          "tags": [{"name": "UXデザイン", "weight": 1.0}, {"name": "UXリード", "weight": 0.9}, {"name": "サービス創出", "weight": 1.0}, {"name": "ユーザー中心設計", "weight": 0.8}]
+        }
+      ]
+    }
+  ]
+}
+

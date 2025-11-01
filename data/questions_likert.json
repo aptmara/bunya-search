@@ -1,0 +1,1399 @@
+{
+  "metadata": {
+    "version": "2024-11-02",
+    "language": "ja",
+    "scale": "likert7",
+    "requiredItemCount": 84,
+    "optionalItemCount": 15,
+    "totalItemCount": 99,
+    "description": "大学分野選択診断用Likert設問バンク。必須108問構成のうちLikert項目として必須84問、補完15問を収録。"
+  },
+  "items": [
+    {
+      "id": "LIKERT-INT-HUM-01",
+      "axis": "interest",
+      "primaryCategory": "人文探究",
+      "prompt": "未知の史料を読み解き、歴史解釈を再構築する過程に強い魅力を感じる。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "values", "category": "学術探究", "weight": 0.3},
+        {"axis": "activity", "category": "ドキュメンテーション", "weight": 0.1}
+      ],
+      "tags": [{"name": "歴史学", "weight": 1.0}, {"name": "考古学", "weight": 0.8}, {"name": "文献学", "weight": 0.7}, {"name": "史料批判", "weight": 1.0}, {"name": "考証", "weight": 0.6}]
+    },
+    {
+      "id": "LIKERT-INT-HUM-02",
+      "axis": "interest",
+      "primaryCategory": "人文探究",
+      "prompt": "文学作品の細部に込められた文化的背景を読み解く作業に時間を忘れて没頭できる。",
+      "polarity": "positive",
+      "difficulty": "easy",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "values", "category": "文化保全", "weight": 0.3},
+        {"axis": "activity", "category": "理論構築", "weight": 0.1}
+      ],
+      "tags": [{"name": "文学", "weight": 1.0}, {"name": "比較文学", "weight": 0.8}, {"name": "文芸批評", "weight": 0.7}, {"name": "解釈", "weight": 1.0}, {"name": "文化背景", "weight": 0.9}]
+    },
+    {
+      "id": "LIKERT-INT-HUM-03",
+      "axis": "interest",
+      "primaryCategory": "人文探究",
+      "prompt": "哲学的な概念の違いを比較し、新しい視点を整理するディスカッションをリードしたい。",
+      "polarity": "positive",
+      "difficulty": "hard",
+      "required": false,
+      "relatedCategories": [
+        {"axis": "values", "category": "学術探究", "weight": 0.3},
+        {"axis": "activity", "category": "ファシリテーション", "weight": 0.1}
+      ],
+      "tags": [{"name": "哲学", "weight": 1.0}, {"name": "倫理学", "weight": 0.8}, {"name": "現代思想", "weight": 0.7}, {"name": "ディスカッション", "weight": 0.9}, {"name": "批判的思考", "weight": 1.0}]
+    },
+    {
+      "id": "LIKERT-INT-SOC-01",
+      "axis": "interest",
+      "primaryCategory": "社会分析",
+      "prompt": "統計データとフィールド調査を組み合わせて社会の変化を説明することに興味がある。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "values", "category": "公共性", "weight": 0.3},
+        {"axis": "activity", "category": "数理解析", "weight": 0.1}
+      ],
+      "tags": [{"name": "社会調査", "weight": 1.0}, {"name": "統計", "weight": 0.9}, {"name": "フィールドワーク", "weight": 0.8}, {"name": "データ分析", "weight": 1.0}, {"name": "社会学", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-INT-SOC-02",
+      "axis": "interest",
+      "primaryCategory": "社会分析",
+      "prompt": "政策が人々の生活にどう影響するかを検証する研究に関わりたい。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "values", "category": "社会貢献", "weight": 0.3},
+        {"axis": "activity", "category": "フィールドワーク", "weight": 0.1}
+      ],
+      "tags": [{"name": "政策評価", "weight": 1.0}, {"name": "公共政策", "weight": 0.9}, {"name": "社会保障", "weight": 0.7}, {"name": "生活", "weight": 0.8}, {"name": "影響測定", "weight": 1.0}]
+    },
+    {
+      "id": "LIKERT-INT-SOC-03",
+      "axis": "interest",
+      "primaryCategory": "社会分析",
+      "prompt": "社会構造を数理モデルで表現する試みには距離を感じる。",
+      "polarity": "reverse",
+      "difficulty": "medium",
+      "required": false,
+      "relatedCategories": [
+        {"axis": "activity", "category": "数理解析", "weight": 0.2},
+        {"axis": "values", "category": "公共性", "weight": 0.1}
+      ],
+      "tags": [{"name": "社会学", "weight": 1.0}, {"name": "数理社会学", "weight": 0.8}, {"name": "モデリング", "weight": 1.0}, {"name": "理論", "weight": 0.7}, {"name": "抵抗感", "weight": 0.5}]
+    },
+    {
+      "id": "LIKERT-INT-ENV-01",
+      "axis": "interest",
+      "primaryCategory": "環境科学",
+      "prompt": "気候データを分析して環境変動の兆しを読み取ることにワクワクする。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "values", "category": "持続可能性", "weight": 0.3},
+        {"axis": "activity", "category": "観測調査", "weight": 0.1}
+      ],
+      "tags": [{"name": "気候科学", "weight": 1.0}, {"name": "地球科学", "weight": 0.8}, {"name": "データ分析", "weight": 1.0}, {"name": "環境変動", "weight": 0.9}, {"name": "気候変動", "weight": 0.9}]
+    },
+    {
+      "id": "LIKERT-INT-ENV-02",
+      "axis": "interest",
+      "primaryCategory": "環境科学",
+      "prompt": "実地調査で得た環境データを政策提言につなげたい。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "activity", "category": "フィールドワーク", "weight": 0.2},
+        {"axis": "values", "category": "公共性", "weight": 0.1}
+      ],
+      "tags": [{"name": "環境政策", "weight": 1.0}, {"name": "環境アセスメント", "weight": 0.8}, {"name": "フィールド調査", "weight": 0.9}, {"name": "提言", "weight": 1.0}, {"name": "合意形成", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-INT-ENV-03",
+      "axis": "interest",
+      "primaryCategory": "環境科学",
+      "prompt": "環境問題について専門的に学ぶより身近な課題を優先したいと考えている。",
+      "polarity": "reverse",
+      "difficulty": "medium",
+      "required": false,
+      "relatedCategories": [
+        {"axis": "values", "category": "持続可能性", "weight": 0.3},
+        {"axis": "values", "category": "地域密着", "weight": 0.1}
+      ],
+      "tags": [{"name": "環境意識", "weight": 1.0}, {"name": "市民活動", "weight": 0.8}, {"name": "優先順位", "weight": 0.9}, {"name": "自己評価", "weight": 0.5}, {"name": "ライフスタイル", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-INT-INF-01",
+      "axis": "interest",
+      "primaryCategory": "情報科学",
+      "prompt": "アルゴリズムの性能差を自分で検証する過程に楽しさを見いだす。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "activity", "category": "プログラミング", "weight": 0.2},
+        {"axis": "values", "category": "革新挑戦", "weight": 0.1}
+      ],
+      "tags": [{"name": "アルゴリズム", "weight": 1.0}, {"name": "計算量", "weight": 0.8}, {"name": "性能評価", "weight": 1.0}, {"name": "プログラミング", "weight": 0.7}, {"name": "検証", "weight": 0.9}]
+    },
+    {
+      "id": "LIKERT-INT-INF-02",
+      "axis": "interest",
+      "primaryCategory": "情報科学",
+      "prompt": "データ基盤を設計し運用を最適化する方法を考えるのが好きだ。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "activity", "category": "マネジメント", "weight": 0.2},
+        {"axis": "values", "category": "自由裁量", "weight": 0.1}
+      ],
+      "tags": [{"name": "データ基盤", "weight": 1.0}, {"name": "DB", "weight": 0.8}, {"name": "運用", "weight": 0.9}, {"name": "システム設計", "weight": 1.0}, {"name": "最適化", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-INT-INF-03",
+      "axis": "interest",
+      "primaryCategory": "情報科学",
+      "prompt": "新しいプログラミング言語を学ぶことに抵抗があり極力避けたい。",
+      "polarity": "reverse",
+      "difficulty": "medium",
+      "required": false,
+      "relatedCategories": [
+        {"axis": "activity", "category": "プログラミング", "weight": 0.2},
+        {"axis": "values", "category": "革新挑戦", "weight": 0.1}
+      ],
+      "tags": [{"name": "プログラミング", "weight": 1.0}, {"name": "学習意欲", "weight": 0.9}, {"name": "自己効力感", "weight": 0.7}, {"name": "新しい技術", "weight": 0.8}, {"name": "抵抗感", "weight": 1.0}]
+    },
+    {
+      "id": "LIKERT-INT-BIO-01",
+      "axis": "interest",
+      "primaryCategory": "生命医科学",
+      "prompt": "細胞や分子レベルの現象を解き明かして医療応用につなげたい。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "activity", "category": "実験操作", "weight": 0.2},
+        {"axis": "values", "category": "社会貢献", "weight": 0.1}
+      ],
+      "tags": [{"name": "分子生物学", "weight": 1.0}, {"name": "細胞生物学", "weight": 0.9}, {"name": "医療応用", "weight": 1.0}, {"name": "創薬", "weight": 0.8}, {"name": "研究意欲", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-INT-BIO-02",
+      "axis": "interest",
+      "primaryCategory": "生命医科学",
+      "prompt": "臨床データを統計的に解析し治療効果を評価することに魅力を感じる。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "activity", "category": "数理解析", "weight": 0.2},
+        {"axis": "values", "category": "公共性", "weight": 0.1}
+      ],
+      "tags": [{"name": "臨床研究", "weight": 1.0}, {"name": "生物統計学", "weight": 0.9}, {"name": "統計解析", "weight": 1.0}, {"name": "治療評価", "weight": 0.8}, {"name": "疫学", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-INT-BIO-03",
+      "axis": "interest",
+      "primaryCategory": "生命医科学",
+      "prompt": "医療研究は専門家に任せ、自分は他分野に集中したいと思う。",
+      "polarity": "reverse",
+      "difficulty": "medium",
+      "required": false,
+      "relatedCategories": [
+        {"axis": "values", "category": "社会貢献", "weight": 0.2},
+        {"axis": "career", "category": "専門職", "weight": 0.1}
+      ],
+      "tags": [{"name": "医療研究", "weight": 1.0}, {"name": "自己定位", "weight": 0.9}, {"name": "興味", "weight": 1.0}, {"name": "専門性", "weight": 0.8}, {"name": "キャリア", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-INT-DIG-01",
+      "axis": "interest",
+      "primaryCategory": "デジタル創造",
+      "prompt": "インタラクティブなデジタル作品で新しい体験を設計することに心が躍る。",
+      "polarity": "positive",
+      "difficulty": "easy",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "activity", "category": "表現制作", "weight": 0.2},
+        {"axis": "values", "category": "芸術性", "weight": 0.1}
+      ],
+      "tags": [{"name": "インタラクションデザイン", "weight": 1.0}, {"name": "UI/UX", "weight": 0.9}, {"name": "体験設計", "weight": 1.0}, {"name": "デジタルアート", "weight": 0.8}, {"name": "メディアアート", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-INT-DIG-02",
+      "axis": "interest",
+      "primaryCategory": "デジタル創造",
+      "prompt": "ユーザーの反応を見ながらUIを高速に改良するプロセスを楽しめる。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "activity", "category": "プロトタイピング", "weight": 0.2},
+        {"axis": "values", "category": "自由裁量", "weight": 0.1}
+      ],
+      "tags": [{"name": "UI", "weight": 1.0}, {"name": "UX", "weight": 0.9}, {"name": "ユーザーテスト", "weight": 1.0}, {"name": "アジャイル", "weight": 0.8}, {"name": "改善", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-INT-DIG-03",
+      "axis": "interest",
+      "primaryCategory": "デジタル創造",
+      "prompt": "デジタル表現よりもアナログ表現の方が自分には合っていると感じる。",
+      "polarity": "reverse",
+      "difficulty": "easy",
+      "required": false,
+      "relatedCategories": [
+        {"axis": "values", "category": "芸術性", "weight": 0.2},
+        {"axis": "learning_style", "category": "創造表現型", "weight": 0.1}
+      ],
+      "tags": [{"name": "表現手法", "weight": 1.0}, {"name": "デジタル", "weight": 1.0}, {"name": "アナログ", "weight": 0.9}, {"name": "嗜好", "weight": 0.8}, {"name": "画材", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-INT-LANG-01",
+      "axis": "interest",
+      "primaryCategory": "言語表現",
+      "prompt": "多言語のニュアンスを比較し、最適な表現を選ぶ作業が好きだ。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "activity", "category": "コミュニケーション", "weight": 0.2},
+        {"axis": "values", "category": "文化保全", "weight": 0.1}
+      ],
+      "tags": [{"name": "多言語", "weight": 1.0}, {"name": "翻訳", "weight": 1.0}, {"name": "通訳", "weight": 0.8}, {"name": "表現選択", "weight": 0.9}, {"name": "言語学", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-INT-LANG-02",
+      "axis": "interest",
+      "primaryCategory": "言語表現",
+      "prompt": "翻訳の際に文化差を埋める工夫を考えることに喜びを感じる。",
+      "polarity": "positive",
+      "difficulty": "easy",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "values", "category": "文化保全", "weight": 0.2},
+        {"axis": "activity", "category": "ドキュメンテーション", "weight": 0.1}
+      ],
+      "tags": [{"name": "翻訳", "weight": 1.0}, {"name": "異文化理解", "weight": 0.9}, {"name": "文化差", "weight": 1.0}, {"name": "表現工夫", "weight": 0.8}, {"name": "ローカライゼーション", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-INT-CULT-01",
+      "axis": "interest",
+      "primaryCategory": "文化批評",
+      "prompt": "映画や音楽が社会に与える影響を批評的に分析したい。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "values", "category": "文化保全", "weight": 0.2},
+        {"axis": "activity", "category": "理論構築", "weight": 0.1}
+      ],
+      "tags": [{"name": "文化研究", "weight": 1.0}, {"name": "メディア論", "weight": 0.9}, {"name": "批評", "weight": 1.0}, {"name": "社会的影響", "weight": 0.8}, {"name": "カルチュラルスタディーズ", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-INT-CULT-02",
+      "axis": "interest",
+      "primaryCategory": "文化批評",
+      "prompt": "大衆文化の分析よりも実用的な学びを優先したい。",
+      "polarity": "reverse",
+      "difficulty": "easy",
+      "required": false,
+      "relatedCategories": [
+        {"axis": "values", "category": "文化保全", "weight": 0.2},
+        {"axis": "values", "category": "経済成果", "weight": 0.1}
+      ],
+      "tags": [{"name": "文化研究", "weight": 1.0}, {"name": "優先順位", "weight": 0.9}, {"name": "実用志向", "weight": 1.0}, {"name": "キャリア", "weight": 0.8}, {"name": "価値観", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-INT-POL-01",
+      "axis": "interest",
+      "primaryCategory": "政治法制度",
+      "prompt": "法制度の変化が市民生活に与える影響を追跡することに関心がある。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "values", "category": "公共性", "weight": 0.3},
+        {"axis": "activity", "category": "ドキュメンテーション", "weight": 0.1}
+      ],
+      "tags": [{"name": "法学", "weight": 1.0}, {"name": "政治学", "weight": 0.9}, {"name": "政策", "weight": 1.0}, {"name": "市民生活", "weight": 0.8}, {"name": "法社会学", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-INT-POL-02",
+      "axis": "interest",
+      "primaryCategory": "政治法制度",
+      "prompt": "法律の条文を読み込む作業は避けたいと感じる。",
+      "polarity": "reverse",
+      "difficulty": "medium",
+      "required": false,
+      "relatedCategories": [
+        {"axis": "activity", "category": "ドキュメンテーション", "weight": 0.2},
+        {"axis": "values", "category": "公共性", "weight": 0.1}
+      ],
+      "tags": [{"name": "法学", "weight": 1.0}, {"name": "条文", "weight": 1.0}, {"name": "読解力", "weight": 0.8}, {"name": "抵抗感", "weight": 0.9}, {"name": "学習スタイル", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-INT-ECO-01",
+      "axis": "interest",
+      "primaryCategory": "経済ビジネス",
+      "prompt": "経済データを用いて市場の動向を予測するプロセスを面白いと思う。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "values", "category": "経済成果", "weight": 0.3},
+        {"axis": "activity", "category": "数理解析", "weight": 0.1}
+      ],
+      "tags": [{"name": "経済学", "weight": 1.0}, {"name": "金融", "weight": 0.8}, {"name": "経済分析", "weight": 1.0}, {"name": "予測", "weight": 0.9}, {"name": "市場動向", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-INT-ECO-02",
+      "axis": "interest",
+      "primaryCategory": "経済ビジネス",
+      "prompt": "利益追求を目的とする分析にはあまり魅力を感じない。",
+      "polarity": "reverse",
+      "difficulty": "medium",
+      "required": false,
+      "relatedCategories": [
+        {"axis": "values", "category": "経済成果", "weight": 0.3},
+        {"axis": "values", "category": "社会貢献", "weight": 0.1}
+      ],
+      "tags": [{"name": "ビジネス", "weight": 1.0}, {"name": "CSR", "weight": 0.8}, {"name": "分析動機", "weight": 1.0}, {"name": "価値観", "weight": 0.9}, {"name": "倫理", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-INT-EARTH-01",
+      "axis": "interest",
+      "primaryCategory": "地球惑星",
+      "prompt": "地球の内部構造や惑星の形成過程を探る研究にワクワクする。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "activity", "category": "観測調査", "weight": 0.2},
+        {"axis": "values", "category": "学術探究", "weight": 0.1}
+      ],
+      "tags": [{"name": "地球科学", "weight": 1.0}, {"name": "惑星科学", "weight": 0.9}, {"name": "惑星形成", "weight": 1.0}, {"name": "研究意欲", "weight": 0.7}, {"name": "天文学", "weight": 0.8}]
+    },
+    {
+      "id": "LIKERT-INT-EARTH-02",
+      "axis": "interest",
+      "primaryCategory": "地球惑星",
+      "prompt": "地質図や衛星画像を読み解く作業は退屈だと感じる。",
+      "polarity": "reverse",
+      "difficulty": "easy",
+      "required": false,
+      "relatedCategories": [
+        {"axis": "activity", "category": "観測調査", "weight": 0.2},
+        {"axis": "values", "category": "学術探究", "weight": 0.1}
+      ],
+      "tags": [{"name": "地質学", "weight": 1.0}, {"name": "リモートセンシング", "weight": 0.9}, {"name": "衛星画像", "weight": 1.0}, {"name": "モチベーション", "weight": 0.7}, {"name": "GIS", "weight": 0.8}]
+    },
+    {
+      "id": "LIKERT-INT-PHYS-01",
+      "axis": "interest",
+      "primaryCategory": "物理数理",
+      "prompt": "物理法則を数学的に導出するプロセスに喜びを感じる。",
+      "polarity": "positive",
+      "difficulty": "hard",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "activity", "category": "数理解析", "weight": 0.3},
+        {"axis": "values", "category": "学術探究", "weight": 0.1}
+      ],
+      "tags": [{"name": "物理学", "weight": 1.0}, {"name": "理論物理学", "weight": 0.9}, {"name": "数式導出", "weight": 1.0}, {"name": "理論", "weight": 0.8}, {"name": "数学", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-INT-PHYS-02",
+      "axis": "interest",
+      "primaryCategory": "物理数理",
+      "prompt": "複雑な数理モデルを使って現象を説明することに抵抗がない。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "activity", "category": "理論構築", "weight": 0.2},
+        {"axis": "values", "category": "革新挑戦", "weight": 0.1}
+      ],
+      "tags": [{"name": "数理モデル", "weight": 1.0}, {"name": "シミュレーション", "weight": 0.9}, {"name": "現象説明", "weight": 1.0}, {"name": "抵抗感", "weight": 0.7}, {"name": "抽象化", "weight": 0.8}]
+    },
+    {
+      "id": "LIKERT-INT-CHEM-01",
+      "axis": "interest",
+      "primaryCategory": "化学材料",
+      "prompt": "材料の微細構造が性質にどう影響するかを実験で確かめたい。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "activity", "category": "実験操作", "weight": 0.2},
+        {"axis": "values", "category": "革新挑戦", "weight": 0.1}
+      ],
+      "tags": [{"name": "材料科学", "weight": 1.0}, {"name": "物性化学", "weight": 0.9}, {"name": "微細構造", "weight": 1.0}, {"name": "実験", "weight": 0.8}, {"name": "ナノテクノロジー", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-INT-CHEM-02",
+      "axis": "interest",
+      "primaryCategory": "化学材料",
+      "prompt": "化学実験の手順管理や安全対策には自信が持てない。",
+      "polarity": "reverse",
+      "difficulty": "medium",
+      "required": false,
+      "relatedCategories": [
+        {"axis": "activity", "category": "実験操作", "weight": 0.2},
+        {"axis": "values", "category": "安定志向", "weight": 0.1}
+      ],
+      "tags": [{"name": "化学実験", "weight": 1.0}, {"name": "安全管理", "weight": 1.0}, {"name": "手順管理", "weight": 0.9}, {"name": "自己効力感", "weight": 0.7}, {"name": "リスク管理", "weight": 0.8}]
+    },
+    {
+      "id": "LIKERT-INT-AGRI-01",
+      "axis": "interest",
+      "primaryCategory": "農環境",
+      "prompt": "食料生産と環境保全を両立させる技術を学ぶことに意義を感じる。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "values", "category": "持続可能性", "weight": 0.3},
+        {"axis": "activity", "category": "フィールドワーク", "weight": 0.1}
+      ],
+      "tags": [{"name": "農学", "weight": 1.0}, {"name": "食料科学", "weight": 0.8}, {"name": "環境保全", "weight": 1.0}, {"name": "技術", "weight": 0.9}, {"name": "サステナビリティ", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-INT-AGRI-02",
+      "axis": "interest",
+      "primaryCategory": "農環境",
+      "prompt": "農業分野は専門的すぎて自分には縁がないと思う。",
+      "polarity": "reverse",
+      "difficulty": "easy",
+      "required": false,
+      "relatedCategories": [
+        {"axis": "values", "category": "地域密着", "weight": 0.2},
+        {"axis": "values", "category": "持続可能性", "weight": 0.1}
+      ],
+      "tags": [{"name": "農業", "weight": 1.0}, {"name": "専門性", "weight": 1.0}, {"name": "距離感", "weight": 0.9}, {"name": "キャリア", "weight": 0.7}, {"name": "食", "weight": 0.8}]
+    },
+    {
+      "id": "LIKERT-INT-ART-01",
+      "axis": "interest",
+      "primaryCategory": "芸術実践",
+      "prompt": "身体表現やパフォーマンスを通じて社会テーマを伝えたい。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "activity", "category": "表現制作", "weight": 0.2},
+        {"axis": "values", "category": "芸術性", "weight": 0.1}
+      ],
+      "tags": [{"name": "パフォーマンスアート", "weight": 1.0}, {"name": "コンテンポラリーダンス", "weight": 0.9}, {"name": "社会テーマ", "weight": 1.0}, {"name": "表現", "weight": 0.8}, {"name": "演劇", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-INT-ART-02",
+      "axis": "interest",
+      "primaryCategory": "芸術実践",
+      "prompt": "創作活動は趣味にとどめ、学びとして深める必要はないと感じる。",
+      "polarity": "reverse",
+      "difficulty": "easy",
+      "required": false,
+      "relatedCategories": [
+        {"axis": "values", "category": "芸術性", "weight": 0.3},
+        {"axis": "learning_style", "category": "創造表現型", "weight": 0.1}
+      ],
+      "tags": [{"name": "芸術活動", "weight": 1.0}, {"name": "趣味", "weight": 0.9}, {"name": "学び", "weight": 1.0}, {"name": "価値観", "weight": 0.8}, {"name": "専門性", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-INT-EDU-01",
+      "axis": "interest",
+      "primaryCategory": "教育革新",
+      "prompt": "学習者のニーズに合わせて授業設計をカスタマイズする挑戦が楽しい。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "values", "category": "社会貢献", "weight": 0.2},
+        {"axis": "career", "category": "教育支援", "weight": 0.1}
+      ],
+      "tags": [{"name": "教育工学", "weight": 1.0}, {"name": "インストラクショナルデザイン", "weight": 0.9}, {"name": "授業設計", "weight": 1.0}, {"name": "個別最適化", "weight": 0.8}, {"name": "教育", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-INT-EDU-02",
+      "axis": "interest",
+      "primaryCategory": "教育革新",
+      "prompt": "教育データを分析し学習改善につなげる取り組みに携わりたい。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "activity", "category": "数理解析", "weight": 0.2},
+        {"axis": "values", "category": "社会貢献", "weight": 0.1}
+      ],
+      "tags": [{"name": "教育データ", "weight": 1.0}, {"name": "ラーニングアナリティクス", "weight": 0.9}, {"name": "改善", "weight": 1.0}, {"name": "分析", "weight": 0.8}, {"name": "EdTech", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-INT-SPORT-01",
+      "axis": "interest",
+      "primaryCategory": "スポーツ科学",
+      "prompt": "運動データを計測しパフォーマンス向上の理論を組み立てたい。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "activity", "category": "観測調査", "weight": 0.2},
+        {"axis": "values", "category": "自由裁量", "weight": 0.1}
+      ],
+      "tags": [{"name": "スポーツ科学", "weight": 1.0}, {"name": "バイオメカニクス", "weight": 0.9}, {"name": "計測", "weight": 1.0}, {"name": "理論構築", "weight": 0.8}, {"name": "データ分析", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-INT-SPORT-02",
+      "axis": "interest",
+      "primaryCategory": "スポーツ科学",
+      "prompt": "スポーツの科学的分析より感覚的な指導の方が重要だと思う。",
+      "polarity": "reverse",
+      "difficulty": "easy",
+      "required": false,
+      "relatedCategories": [
+        {"axis": "values", "category": "自由裁量", "weight": 0.2},
+        {"axis": "learning_style", "category": "体験実践型", "weight": 0.1}
+      ],
+      "tags": [{"name": "スポーツ科学", "weight": 1.0}, {"name": "コーチング", "weight": 0.9}, {"name": "分析", "weight": 1.0}, {"name": "価値観", "weight": 0.8}, {"name": "経験則", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-INT-DESIGN-01",
+      "axis": "interest",
+      "primaryCategory": "デザイン思考",
+      "prompt": "ユーザーの課題を観察し体験全体を再設計するプロセスに魅力を感じる。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "activity", "category": "フィールドワーク", "weight": 0.2},
+        {"axis": "values", "category": "自由裁量", "weight": 0.1}
+      ],
+      "tags": [{"name": "デザイン思考", "weight": 1.0}, {"name": "サービスデザイン", "weight": 0.9}, {"name": "ユーザー観察", "weight": 1.0}, {"name": "体験設計", "weight": 0.8}, {"name": "UXリサーチ", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-INT-DESIGN-02",
+      "axis": "interest",
+      "primaryCategory": "デザイン思考",
+      "prompt": "抽象的なアイデアの発散よりも既存の手順に従う方が安心だ。",
+      "polarity": "reverse",
+      "difficulty": "medium",
+      "required": false,
+      "relatedCategories": [
+        {"axis": "values", "category": "自由裁量", "weight": 0.2},
+        {"axis": "learning_style", "category": "理論重視型", "weight": 0.1}
+      ],
+      "tags": [{"name": "デザイン思考", "weight": 1.0}, {"name": "発想法", "weight": 0.9}, {"name": "アイデア発散", "weight": 1.0}, {"name": "安心感", "weight": 0.8}, {"name": "創造性", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-ACT-THEORY-01",
+      "axis": "activity",
+      "primaryCategory": "理論構築",
+      "prompt": "複数の研究成果を整理し独自の理論枠組みを構築することが得意だと感じる。",
+      "polarity": "positive",
+      "difficulty": "hard",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "人文探究", "weight": 0.2},
+        {"axis": "learning_style", "category": "理論重視型", "weight": 0.1}
+      ],
+      "tags": [{"name": "理論構築", "weight": 1.0}, {"name": "研究", "weight": 0.9}, {"name": "統合", "weight": 1.0}, {"name": "抽象化", "weight": 0.8}, {"name": "論文執筆", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-ACT-THEORY-02",
+      "axis": "activity",
+      "primaryCategory": "理論構築",
+      "prompt": "概念間の関係を図式化して他者に説明する作業を進んで引き受ける。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "デザイン思考", "weight": 0.2},
+        {"axis": "values", "category": "学術探究", "weight": 0.1}
+      ],
+      "tags": [{"name": "概念図", "weight": 1.0}, {"name": "図解", "weight": 0.9}, {"name": "説明", "weight": 1.0}, {"name": "整理", "weight": 0.8}, {"name": "コミュニケーション", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-ACT-MATH-01",
+      "axis": "activity",
+      "primaryCategory": "数理解析",
+      "prompt": "データの前提条件を疑いながら統計モデルを選択できる。",
+      "polarity": "positive",
+      "difficulty": "hard",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "社会分析", "weight": 0.2},
+        {"axis": "values", "category": "経済成果", "weight": 0.1}
+      ],
+      "tags": [{"name": "統計", "weight": 1.0}, {"name": "データサイエンス", "weight": 0.9}, {"name": "モデル選択", "weight": 1.0}, {"name": "批判的思考", "weight": 0.8}, {"name": "仮説検定", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-ACT-MATH-02",
+      "axis": "activity",
+      "primaryCategory": "数理解析",
+      "prompt": "複雑な数式を扱うと集中力が続かず途中で諦めてしまう。",
+      "polarity": "reverse",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "物理数理", "weight": 0.2},
+        {"axis": "learning_style", "category": "理論重視型", "weight": 0.1}
+      ],
+      "tags": [{"name": "数式", "weight": 1.0}, {"name": "数学", "weight": 0.9}, {"name": "集中力", "weight": 1.0}, {"name": "自己評価", "weight": 0.8}, {"name": "忍耐力", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-ACT-EXP-01",
+      "axis": "activity",
+      "primaryCategory": "実験操作",
+      "prompt": "実験手順を正確に守りながら予期せぬ結果にも冷静に対応できる。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "生命医科学", "weight": 0.2},
+        {"axis": "values", "category": "社会貢献", "weight": 0.1}
+      ],
+      "tags": [{"name": "実験", "weight": 1.0}, {"name": "再現性", "weight": 0.9}, {"name": "手順遵守", "weight": 1.0}, {"name": "柔軟性", "weight": 0.8}, {"name": "トラブルシューティング", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-ACT-EXP-02",
+      "axis": "activity",
+      "primaryCategory": "実験操作",
+      "prompt": "実験装置の調整や保守をこまめに行うのは苦手だ。",
+      "polarity": "reverse",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "化学材料", "weight": 0.2},
+        {"axis": "values", "category": "安定志向", "weight": 0.1}
+      ],
+      "tags": [{"name": "装置調整", "weight": 1.0}, {"name": "メンテナンス", "weight": 0.9}, {"name": "保守", "weight": 1.0}, {"name": "自己効力感", "weight": 0.8}, {"name": "丁寧さ", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-ACT-OBS-01",
+      "axis": "activity",
+      "primaryCategory": "観測調査",
+      "prompt": "観測データのノイズを識別し必要な情報を抽出できる。",
+      "polarity": "positive",
+      "difficulty": "hard",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "環境科学", "weight": 0.2},
+        {"axis": "learning_style", "category": "継続改善型", "weight": 0.1}
+      ],
+      "tags": [{"name": "観測", "weight": 1.0}, {"name": "データクリーニング", "weight": 0.9}, {"name": "ノイズ処理", "weight": 1.0}, {"name": "分析", "weight": 0.8}, {"name": "情報抽出", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-ACT-OBS-02",
+      "axis": "activity",
+      "primaryCategory": "観測調査",
+      "prompt": "長時間の観測記録を続ける根気には自信がない。",
+      "polarity": "reverse",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "地球惑星", "weight": 0.2},
+        {"axis": "learning_style", "category": "体験実践型", "weight": 0.1}
+      ],
+      "tags": [{"name": "観測", "weight": 1.0}, {"name": "忍耐力", "weight": 0.9}, {"name": "継続力", "weight": 1.0}, {"name": "自己評価", "weight": 0.8}, {"name": "集中力", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-ACT-FIELD-01",
+      "axis": "activity",
+      "primaryCategory": "フィールドワーク",
+      "prompt": "現地でのインタビューや観察から洞察をまとめるのが得意だ。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "社会分析", "weight": 0.2},
+        {"axis": "values", "category": "地域密着", "weight": 0.1}
+      ],
+      "tags": [{"name": "フィールド調査", "weight": 1.0}, {"name": "質的調査", "weight": 0.9}, {"name": "インタビュー", "weight": 1.0}, {"name": "洞察", "weight": 0.8}, {"name": "エスノグラフィ", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-ACT-FIELD-02",
+      "axis": "activity",
+      "primaryCategory": "フィールドワーク",
+      "prompt": "現場で予測不能な出来事が起きても柔軟に対応できる。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "農環境", "weight": 0.2},
+        {"axis": "risk", "category": "リスク変化適応", "weight": 0.1}
+      ],
+      "tags": [{"name": "臨機応変", "weight": 1.0}, {"name": "問題解決", "weight": 0.9}, {"name": "現場対応", "weight": 1.0}, {"name": "柔軟性", "weight": 0.8}, {"name": "ストレス耐性", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-ACT-PROTO-01",
+      "axis": "activity",
+      "primaryCategory": "プロトタイピング",
+      "prompt": "短時間で試作品を作り検証サイクルを回すことに達成感を覚える。",
+      "polarity": "positive",
+      "difficulty": "easy",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "デジタル創造", "weight": 0.2},
+        {"axis": "values", "category": "革新挑戦", "weight": 0.1}
+      ],
+      "tags": [{"name": "プロトタイピング", "weight": 1.0}, {"name": "アジャイル開発", "weight": 0.8}, {"name": "試作", "weight": 1.0}, {"name": "高速検証", "weight": 0.9}, {"name": "達成感", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-ACT-PROTO-02",
+      "axis": "activity",
+      "primaryCategory": "プロトタイピング",
+      "prompt": "未完成のアイデアを人に見せることに抵抗がある。",
+      "polarity": "reverse",
+      "difficulty": "easy",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "デザイン思考", "weight": 0.2},
+        {"axis": "learning_style", "category": "創造表現型", "weight": 0.1}
+      ],
+      "tags": [{"name": "フィードバック", "weight": 1.0}, {"name": "完璧主義", "weight": 0.8}, {"name": "心理的安全性", "weight": 0.9}, {"name": "可視化", "weight": 0.7}, {"name": "抵抗感", "weight": 1.0}]
+    },
+    {
+      "id": "LIKERT-ACT-CODE-01",
+      "axis": "activity",
+      "primaryCategory": "プログラミング",
+      "prompt": "新しいプログラミングパラダイムを試しながら問題解決することが楽しい。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "情報科学", "weight": 0.2},
+        {"axis": "values", "category": "革新挑戦", "weight": 0.1}
+      ],
+      "tags": [{"name": "プログラミング", "weight": 1.0}, {"name": "関数型プログラミング", "weight": 0.7}, {"name": "パラダイム", "weight": 1.0}, {"name": "問題解決", "weight": 0.9}, {"name": "学習意欲", "weight": 0.8}]
+    },
+    {
+      "id": "LIKERT-ACT-CODE-02",
+      "axis": "activity",
+      "primaryCategory": "プログラミング",
+      "prompt": "コードレビューで指摘を受けると改善点をすぐ実装できる。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "learning_style", "category": "継続改善型", "weight": 0.2},
+        {"axis": "values", "category": "自由裁量", "weight": 0.1}
+      ],
+      "tags": [{"name": "コードレビュー", "weight": 1.0}, {"name": "協調性", "weight": 0.8}, {"name": "改善", "weight": 1.0}, {"name": "フィードバック", "weight": 0.9}, {"name": "素直さ", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-ACT-EXPRESS-01",
+      "axis": "activity",
+      "primaryCategory": "表現制作",
+      "prompt": "限られた時間でも質の高い表現物を仕上げられる。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "芸術実践", "weight": 0.2},
+        {"axis": "learning_style", "category": "創造表現型", "weight": 0.1}
+      ],
+      "tags": [{"name": "表現制作", "weight": 1.0}, {"name": "アウトプット", "weight": 0.9}, {"name": "クオリティ", "weight": 1.0}, {"name": "時間管理", "weight": 0.8}, {"name": "集中力", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-ACT-EXPRESS-02",
+      "axis": "activity",
+      "primaryCategory": "表現制作",
+      "prompt": "周囲と比べて作品の完成度にムラが出やすい。",
+      "polarity": "reverse",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "デジタル創造", "weight": 0.2},
+        {"axis": "values", "category": "芸術性", "weight": 0.1}
+      ],
+      "tags": [{"name": "制作", "weight": 1.0}, {"name": "波がある", "weight": 0.9}, {"name": "品質", "weight": 1.0}, {"name": "自己評価", "weight": 0.8}, {"name": "安定性", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-ACT-FACIL-01",
+      "axis": "activity",
+      "primaryCategory": "ファシリテーション",
+      "prompt": "多様な意見を引き出し議論を合意に導くのが得意だ。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "教育革新", "weight": 0.2},
+        {"axis": "values", "category": "公共性", "weight": 0.1}
+      ],
+      "tags": [{"name": "ファシリテーション", "weight": 1.0}, {"name": "リーダーシップ", "weight": 0.8}, {"name": "合意形成", "weight": 1.0}, {"name": "対話", "weight": 0.9}, {"name": "コミュニケーション", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-ACT-FACIL-02",
+      "axis": "activity",
+      "primaryCategory": "ファシリテーション",
+      "prompt": "会議で進行役を任されると緊張してしまう。",
+      "polarity": "reverse",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "learning_style", "category": "協働探究型", "weight": 0.2},
+        {"axis": "values", "category": "公共性", "weight": 0.1}
+      ],
+      "tags": [{"name": "会議進行", "weight": 1.0}, {"name": "プレゼンテーション", "weight": 0.8}, {"name": "緊張", "weight": 1.0}, {"name": "役割", "weight": 0.9}, {"name": "パブリックスピーキング", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-ACT-MGMT-01",
+      "axis": "activity",
+      "primaryCategory": "マネジメント",
+      "prompt": "プロジェクトのリスクとリソースを可視化して調整できる。",
+      "polarity": "positive",
+      "difficulty": "hard",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "career", "category": "プロダクトマネジメント", "weight": 0.2},
+        {"axis": "risk", "category": "リスク計画", "weight": 0.1}
+      ],
+      "tags": [{"name": "プロジェクト管理", "weight": 1.0}, {"name": "PjM", "weight": 0.9}, {"name": "リソース配分", "weight": 1.0}, {"name": "リスク", "weight": 0.8}, {"name": "計画性", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-ACT-MGMT-02",
+      "axis": "activity",
+      "primaryCategory": "マネジメント",
+      "prompt": "細かな進捗管理より自分のタスクに集中したいと感じる。",
+      "polarity": "reverse",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "career", "category": "プロダクトマネジメント", "weight": 0.2},
+        {"axis": "values", "category": "自由裁量", "weight": 0.1}
+      ],
+      "tags": [{"name": "進捗管理", "weight": 1.0}, {"name": "マイクロマネジメント", "weight": 0.9}, {"name": "自己志向", "weight": 1.0}, {"name": "役割観", "weight": 0.8}, {"name": "自律性", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-ACT-COMM-01",
+      "axis": "activity",
+      "primaryCategory": "コミュニケーション",
+      "prompt": "専門外の人にも分かる言葉で要点をまとめることができる。",
+      "polarity": "positive",
+      "difficulty": "easy",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "言語表現", "weight": 0.2},
+        {"axis": "values", "category": "公共性", "weight": 0.1}
+      ],
+      "tags": [{"name": "説明力", "weight": 1.0}, {"name": "要約力", "weight": 0.9}, {"name": "翻訳", "weight": 0.8}, {"name": "コミュニケーション", "weight": 1.0}, {"name": "プレゼンテーション", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-ACT-COMM-02",
+      "axis": "activity",
+      "primaryCategory": "コミュニケーション",
+      "prompt": "多数のステークホルダーと調整する場面でも落ち着いて話せる。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "career", "category": "公共政策", "weight": 0.2},
+        {"axis": "learning_style", "category": "協働探究型", "weight": 0.1}
+      ],
+      "tags": [{"name": "調整力", "weight": 1.0}, {"name": "交渉力", "weight": 0.9}, {"name": "ステークホルダー", "weight": 1.0}, {"name": "落ち着き", "weight": 0.8}, {"name": "対人スキル", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-ACT-DOC-01",
+      "axis": "activity",
+      "primaryCategory": "ドキュメンテーション",
+      "prompt": "調査記録や議事録を構造化して残す作業を苦に感じない。",
+      "polarity": "positive",
+      "difficulty": "easy",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "人文探究", "weight": 0.2},
+        {"axis": "values", "category": "安定志向", "weight": 0.1}
+      ],
+      "tags": [{"name": "記録", "weight": 1.0}, {"name": "整理整頓", "weight": 0.8}, {"name": "構造化", "weight": 1.0}, {"name": "文書化", "weight": 0.9}, {"name": "几帳面", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-ACT-DOC-02",
+      "axis": "activity",
+      "primaryCategory": "ドキュメンテーション",
+      "prompt": "文書化よりも口頭で共有できれば十分だと思う。",
+      "polarity": "reverse",
+      "difficulty": "easy",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "社会分析", "weight": 0.2},
+        {"axis": "values", "category": "自由裁量", "weight": 0.1}
+      ],
+      "tags": [{"name": "記録", "weight": 1.0}, {"name": "口頭共有", "weight": 1.0}, {"name": "効率重視", "weight": 0.9}, {"name": "非公式", "weight": 0.8}, {"name": "コミュニケーションスタイル", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-VAL-SOCIAL-01",
+      "axis": "values",
+      "primaryCategory": "社会貢献",
+      "prompt": "社会的弱者の支援につながる研究や実践に時間を投資したい。",
+      "polarity": "positive",
+      "difficulty": "easy",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "社会分析", "weight": 0.2},
+        {"axis": "career", "category": "教育支援", "weight": 0.1}
+      ],
+      "tags": [{"name": "社会貢献", "weight": 1.0}, {"name": "ボランティア", "weight": 0.8}, {"name": "支援", "weight": 1.0}, {"name": "時間投資", "weight": 0.9}, {"name": "NPO/NGO", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-VAL-PUBLIC-01",
+      "axis": "values",
+      "primaryCategory": "公共性",
+      "prompt": "公共性の高いプロジェクトで成果を出すことにやりがいを感じる。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "政治法制度", "weight": 0.2},
+        {"axis": "career", "category": "公共政策", "weight": 0.1}
+      ],
+      "tags": [{"name": "公共性", "weight": 1.0}, {"name": "インフラ", "weight": 0.8}, {"name": "プロジェクト", "weight": 1.0}, {"name": "やりがい", "weight": 0.9}, {"name": "公務員", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-VAL-SUSTAIN-01",
+      "axis": "values",
+      "primaryCategory": "持続可能性",
+      "prompt": "環境負荷を減らす視点を意思決定の最優先に据えたい。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "環境科学", "weight": 0.2},
+        {"axis": "career", "category": "国際協力", "weight": 0.1}
+      ],
+      "tags": [{"name": "持続可能性", "weight": 1.0}, {"name": "SDGs", "weight": 0.9}, {"name": "意思決定", "weight": 1.0}, {"name": "環境配慮", "weight": 0.8}, {"name": "倫理", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-VAL-CULTURE-01",
+      "axis": "values",
+      "primaryCategory": "文化保全",
+      "prompt": "文化資産を未来に残すための取り組みを継続したい。",
+      "polarity": "positive",
+      "difficulty": "easy",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "文化批評", "weight": 0.2},
+        {"axis": "career", "category": "文化産業", "weight": 0.1}
+      ],
+      "tags": [{"name": "文化資産", "weight": 1.0}, {"name": "文化人類学", "weight": 0.8}, {"name": "継続", "weight": 1.0}, {"name": "保全", "weight": 0.9}, {"name": "歴史", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-VAL-INNOV-01",
+      "axis": "values",
+      "primaryCategory": "革新挑戦",
+      "prompt": "リスクがあっても革新的な挑戦を選びたい。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "デジタル創造", "weight": 0.2},
+        {"axis": "risk", "category": "リスク大胆", "weight": 0.1}
+      ],
+      "tags": [{"name": "革新", "weight": 1.0}, {"name": "スタートアップ", "weight": 0.8}, {"name": "挑戦", "weight": 1.0}, {"name": "リスクテイク", "weight": 0.9}, {"name": "アントレプレナーシップ", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-VAL-ECON-01",
+      "axis": "values",
+      "primaryCategory": "経済成果",
+      "prompt": "明確な経済的成果で評価される環境がモチベーションになる。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "経済ビジネス", "weight": 0.2},
+        {"axis": "career", "category": "ビジネス起業", "weight": 0.1}
+      ],
+      "tags": [{"name": "経済的成果", "weight": 1.0}, {"name": "インセンティブ", "weight": 0.8}, {"name": "評価", "weight": 1.0}, {"name": "モチベーション", "weight": 0.9}, {"name": "競争", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-VAL-ART-01",
+      "axis": "values",
+      "primaryCategory": "芸術性",
+      "prompt": "芸術的な価値を社会に広める活動に貢献したい。",
+      "polarity": "positive",
+      "difficulty": "easy",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "芸術実践", "weight": 0.2},
+        {"axis": "career", "category": "文化産業", "weight": 0.1}
+      ],
+      "tags": [{"name": "芸術", "weight": 1.0}, {"name": "アートマネジメント", "weight": 0.8}, {"name": "価値共有", "weight": 1.0}, {"name": "社会貢献", "weight": 0.9}, {"name": "キュレーション", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-VAL-STABLE-01",
+      "axis": "values",
+      "primaryCategory": "安定志向",
+      "prompt": "安定した制度や組織に所属して専門性を深めたい。",
+      "polarity": "positive",
+      "difficulty": "easy",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "career", "category": "専門職", "weight": 0.2},
+        {"axis": "risk", "category": "リスク安定", "weight": 0.1}
+      ],
+      "tags": [{"name": "安定", "weight": 1.0}, {"name": "大企業", "weight": 0.8}, {"name": "専門性", "weight": 1.0}, {"name": "組織", "weight": 0.9}, {"name": "福利厚生", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-VAL-FREEDOM-01",
+      "axis": "values",
+      "primaryCategory": "自由裁量",
+      "prompt": "裁量の大きい環境で自分のアイデアを試したい。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "デザイン思考", "weight": 0.2},
+        {"axis": "career", "category": "ビジネス起業", "weight": 0.1}
+      ],
+      "tags": [{"name": "裁量", "weight": 1.0}, {"name": "自律性", "weight": 0.9}, {"name": "アイデア実装", "weight": 1.0}, {"name": "自由度", "weight": 0.8}, {"name": "スタートアップ", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-VAL-LOCAL-01",
+      "axis": "values",
+      "primaryCategory": "地域密着",
+      "prompt": "地域の人々と長期的に関わる仕事を選びたい。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "農環境", "weight": 0.2},
+        {"axis": "career", "category": "公共政策", "weight": 0.1}
+      ],
+      "tags": [{"name": "地域", "weight": 1.0}, {"name": "コミュニティ", "weight": 0.9}, {"name": "長期関係", "weight": 1.0}, {"name": "仕事選択", "weight": 0.8}, {"name": "地方創生", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-VAL-GLOBAL-01",
+      "axis": "values",
+      "primaryCategory": "グローバル",
+      "prompt": "国境を越えた協働で課題解決に取り組む自分を想像する。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "社会分析", "weight": 0.2},
+        {"axis": "career", "category": "国際協力", "weight": 0.1}
+      ],
+      "tags": [{"name": "グローバル", "weight": 1.0}, {"name": "国際関係", "weight": 0.9}, {"name": "協働", "weight": 1.0}, {"name": "課題解決", "weight": 0.8}, {"name": "異文化", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-VAL-ACADEMIC-01",
+      "axis": "values",
+      "primaryCategory": "学術探究",
+      "prompt": "知の継承と創造そのものに価値を置いて学び続けたい。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "人文探究", "weight": 0.2},
+        {"axis": "career", "category": "研究職", "weight": 0.1}
+      ],
+      "tags": [{"name": "学術", "weight": 1.0}, {"name": "研究", "weight": 0.9}, {"name": "継承", "weight": 1.0}, {"name": "生涯学習", "weight": 0.8}, {"name": "知的好奇心", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-CAR-RESEARCH-01",
+      "axis": "career",
+      "primaryCategory": "研究職",
+      "prompt": "未踏領域の研究成果を積み上げることにキャリアの軸を置きたい。",
+      "polarity": "positive",
+      "difficulty": "hard",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "values", "category": "学術探究", "weight": 0.3},
+        {"axis": "interest", "category": "物理数理", "weight": 0.1}
+      ],
+      "tags": [{"name": "研究職", "weight": 1.0}, {"name": "大学院", "weight": 0.8}, {"name": "未踏領域", "weight": 1.0}, {"name": "キャリア志向", "weight": 0.9}, {"name": "ポスドク", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-CAR-PROF-01",
+      "axis": "career",
+      "primaryCategory": "専門職",
+      "prompt": "国家資格を活かし現場で専門家として責任を果たす働き方を望む。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "values", "category": "安定志向", "weight": 0.2},
+        {"axis": "interest", "category": "生命医科学", "weight": 0.1}
+      ],
+      "tags": [{"name": "専門職", "weight": 1.0}, {"name": "弁護士", "weight": 0.7}, {"name": "責任", "weight": 1.0}, {"name": "資格", "weight": 0.9}, {"name": "医師", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-CAR-TECH-01",
+      "axis": "career",
+      "primaryCategory": "技術開発",
+      "prompt": "技術開発の現場で新製品やサービスを実装する役割に魅力を感じる。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "情報科学", "weight": 0.2},
+        {"axis": "values", "category": "革新挑戦", "weight": 0.1}
+      ],
+      "tags": [{"name": "技術開発", "weight": 1.0}, {"name": "エンジニア", "weight": 0.9}, {"name": "実装", "weight": 1.0}, {"name": "魅力", "weight": 0.8}, {"name": "ものづくり", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-CAR-PM-01",
+      "axis": "career",
+      "primaryCategory": "プロダクトマネジメント",
+      "prompt": "多職種チームをまとめて製品価値を最大化するポジションを目指したい。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "activity", "category": "マネジメント", "weight": 0.2},
+        {"axis": "values", "category": "自由裁量", "weight": 0.1}
+      ],
+      "tags": [{"name": "プロダクトマネジメント", "weight": 1.0}, {"name": "PdM", "weight": 0.9}, {"name": "多職種", "weight": 1.0}, {"name": "価値最大化", "weight": 0.8}, {"name": "リーダーシップ", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-CAR-ENT-01",
+      "axis": "career",
+      "primaryCategory": "ビジネス起業",
+      "prompt": "自らリスクを取り事業を立ち上げる選択を前向きに考えている。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "values", "category": "革新挑戦", "weight": 0.3},
+        {"axis": "risk", "category": "リスク大胆", "weight": 0.1}
+      ],
+      "tags": [{"name": "起業", "weight": 1.0}, {"name": "アントレプレナーシップ", "weight": 0.9}, {"name": "リスクテイク", "weight": 1.0}, {"name": "キャリア観", "weight": 0.8}, {"name": "スタートアップ", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-CAR-PUBLIC-01",
+      "axis": "career",
+      "primaryCategory": "公共政策",
+      "prompt": "行政や政策形成に携わり社会制度を改善したい。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "政治法制度", "weight": 0.2},
+        {"axis": "values", "category": "公共性", "weight": 0.1}
+      ],
+      "tags": [{"name": "公共政策", "weight": 1.0}, {"name": "公務員", "weight": 0.9}, {"name": "制度改善", "weight": 1.0}, {"name": "行政", "weight": 0.8}, {"name": "立法", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-CAR-GLOBAL-01",
+      "axis": "career",
+      "primaryCategory": "国際協力",
+      "prompt": "国際協力の現場で文化や言語を越えて調整する役割を担いたい。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "values", "category": "グローバル", "weight": 0.3},
+        {"axis": "interest", "category": "社会分析", "weight": 0.1}
+      ],
+      "tags": [{"name": "国際協力", "weight": 1.0}, {"name": "NPO/NGO", "weight": 0.9}, {"name": "調整", "weight": 1.0}, {"name": "多文化", "weight": 0.8}, {"name": "開発援助", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-CAR-CULTURE-01",
+      "axis": "career",
+      "primaryCategory": "文化産業",
+      "prompt": "文化産業で作品やイベントをプロデュースする働き方に惹かれる。",
+      "polarity": "positive",
+      "difficulty": "easy",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "デジタル創造", "weight": 0.2},
+        {"axis": "values", "category": "芸術性", "weight": 0.1}
+      ],
+      "tags": [{"name": "文化産業", "weight": 1.0}, {"name": "エンタメ", "weight": 0.9}, {"name": "プロデュース", "weight": 1.0}, {"name": "イベント", "weight": 0.8}, {"name": "コンテンツ", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-CAR-EDU-01",
+      "axis": "career",
+      "primaryCategory": "教育支援",
+      "prompt": "学びを支援する立場として人の成長に寄り添うキャリアを志望している。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "教育革新", "weight": 0.2},
+        {"axis": "values", "category": "社会貢献", "weight": 0.1}
+      ],
+      "tags": [{"name": "教育支援", "weight": 1.0}, {"name": "カウンセラー", "weight": 0.8}, {"name": "成長支援", "weight": 1.0}, {"name": "キャリア", "weight": 0.9}, {"name": "コーチング", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-LEA-SELF-01",
+      "axis": "learning_style",
+      "primaryCategory": "自己探究型",
+      "prompt": "一人で深く考える時間を確保して学びを進めるのが最も成果につながる。",
+      "polarity": "positive",
+      "difficulty": "easy",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "interest", "category": "人文探究", "weight": 0.2},
+        {"axis": "risk", "category": "リスク計画", "weight": 0.1}
+      ],
+      "tags": [{"name": "学習スタイル", "weight": 1.0}, {"name": "内省", "weight": 0.9}, {"name": "自己整理", "weight": 1.0}, {"name": "深い思考", "weight": 0.8}, {"name": "自律学習", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-LEA-COOP-01",
+      "axis": "learning_style",
+      "primaryCategory": "協働探究型",
+      "prompt": "仲間と議論しながら知識を組み立てると理解が深まると感じる。",
+      "polarity": "positive",
+      "difficulty": "easy",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "activity", "category": "ファシリテーション", "weight": 0.2},
+        {"axis": "values", "category": "公共性", "weight": 0.1}
+      ],
+      "tags": [{"name": "協働学習", "weight": 1.0}, {"name": "グループワーク", "weight": 0.9}, {"name": "議論", "weight": 1.0}, {"name": "理解深化", "weight": 0.8}, {"name": "対話", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-LEA-EXPER-01",
+      "axis": "learning_style",
+      "primaryCategory": "体験実践型",
+      "prompt": "現場で試行錯誤する体験を通じて学ぶことを重視している。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "activity", "category": "フィールドワーク", "weight": 0.2},
+        {"axis": "interest", "category": "スポーツ科学", "weight": 0.1}
+      ],
+      "tags": [{"name": "体験学習", "weight": 1.0}, {"name": "実践", "weight": 0.9}, {"name": "試行錯誤", "weight": 1.0}, {"name": "重視", "weight": 0.8}, {"name": "OJT", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-LEA-THEORY-01",
+      "axis": "learning_style",
+      "primaryCategory": "理論重視型",
+      "prompt": "理論的な枠組みを理解してから活動する方が安心できる。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "activity", "category": "理論構築", "weight": 0.2},
+        {"axis": "interest", "category": "物理数理", "weight": 0.1}
+      ],
+      "tags": [{"name": "理論", "weight": 1.0}, {"name": "体系的理解", "weight": 0.9}, {"name": "枠組み", "weight": 1.0}, {"name": "安心感", "weight": 0.8}, {"name": "構造化", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-LEA-CREATIVE-01",
+      "axis": "learning_style",
+      "primaryCategory": "創造表現型",
+      "prompt": "表現やプロトタイプを通じて考えを可視化するとアイデアがまとまる。",
+      "polarity": "positive",
+      "difficulty": "easy",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "activity", "category": "プロトタイピング", "weight": 0.2},
+        {"axis": "interest", "category": "デジタル創造", "weight": 0.1}
+      ],
+      "tags": [{"name": "プロトタイプ", "weight": 1.0}, {"name": "発想", "weight": 0.9}, {"name": "可視化", "weight": 1.0}, {"name": "アイデア整理", "weight": 0.8}, {"name": "デザイン", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-LEA-CYCLE-01",
+      "axis": "learning_style",
+      "primaryCategory": "継続改善型",
+      "prompt": "定期的に振り返りと改善を繰り返す学習プロセスを意識している。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "activity", "category": "ドキュメンテーション", "weight": 0.2},
+        {"axis": "values", "category": "学術探究", "weight": 0.1}
+      ],
+      "tags": [{"name": "振り返り", "weight": 1.0}, {"name": "PDCA", "weight": 0.9}, {"name": "改善", "weight": 1.0}, {"name": "学習プロセス", "weight": 0.8}, {"name": "メタ認知", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-RISK-STEADY-01",
+      "axis": "risk",
+      "primaryCategory": "リスク安定",
+      "prompt": "大きな不確実性より確実な成果が見込める選択を優先したい。",
+      "polarity": "positive",
+      "difficulty": "easy",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "values", "category": "安定志向", "weight": 0.3},
+        {"axis": "career", "category": "専門職", "weight": 0.1}
+      ],
+      "tags": [{"name": "リスク回避", "weight": 1.0}, {"name": "安定志向", "weight": 1.0}, {"name": "意思決定", "weight": 0.9}, {"name": "確実性", "weight": 0.8}, {"name": "慎重", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-RISK-PLAN-01",
+      "axis": "risk",
+      "primaryCategory": "リスク計画",
+      "prompt": "挑戦する際もリスクを分解し計画的に進めることを重視する。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "activity", "category": "マネジメント", "weight": 0.2},
+        {"axis": "values", "category": "革新挑戦", "weight": 0.1}
+      ],
+      "tags": [{"name": "リスク管理", "weight": 1.0}, {"name": "分析", "weight": 0.9}, {"name": "計画", "weight": 1.0}, {"name": "挑戦", "weight": 0.8}, {"name": "準備", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-RISK-STAGE-01",
+      "axis": "risk",
+      "primaryCategory": "リスク段階",
+      "prompt": "新しいことは小さなステップを踏んで段階的にスケールさせたい。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "learning_style", "category": "継続改善型", "weight": 0.2},
+        {"axis": "values", "category": "自由裁量", "weight": 0.1}
+      ],
+      "tags": [{"name": "段階的挑戦", "weight": 1.0}, {"name": "スモールスタート", "weight": 0.9}, {"name": "ステップ", "weight": 1.0}, {"name": "スケール", "weight": 0.8}, {"name": "着実", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-RISK-BOLD-01",
+      "axis": "risk",
+      "primaryCategory": "リスク大胆",
+      "prompt": "失敗の可能性が高くても大胆な一歩を踏み出す価値があると思う。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "values", "category": "革新挑戦", "weight": 0.3},
+        {"axis": "career", "category": "ビジネス起業", "weight": 0.1}
+      ],
+      "tags": [{"name": "リスクテイク", "weight": 1.0}, {"name": "ハイリスクハイリターン", "weight": 0.9}, {"name": "挑戦", "weight": 1.0}, {"name": "大胆", "weight": 0.8}, {"name": "決断力", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-RISK-TOLERATE-01",
+      "axis": "risk",
+      "primaryCategory": "リスク失敗寛容",
+      "prompt": "失敗から得た学びを次の挑戦にすぐ活かせる。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "learning_style", "category": "継続改善型", "weight": 0.2},
+        {"axis": "values", "category": "革新挑戦", "weight": 0.1}
+      ],
+      "tags": [{"name": "失敗学習", "weight": 1.0}, {"name": "レジリエンス", "weight": 0.9}, {"name": "挑戦", "weight": 1.0}, {"name": "改善", "weight": 0.8}, {"name": "ポジティブ", "weight": 0.7}]
+    },
+    {
+      "id": "LIKERT-RISK-ADAPT-01",
+      "axis": "risk",
+      "primaryCategory": "リスク変化適応",
+      "prompt": "環境が急に変わっても柔軟に優先順位を切り替えられる。",
+      "polarity": "positive",
+      "difficulty": "medium",
+      "required": true,
+      "relatedCategories": [
+        {"axis": "activity", "category": "フィールドワーク", "weight": 0.2},
+        {"axis": "values", "category": "自由裁量", "weight": 0.1}
+      ],
+      "tags": [{"name": "変化対応", "weight": 1.0}, {"name": "適応力", "weight": 0.9}, {"name": "柔軟性", "weight": 1.0}, {"name": "優先順位", "weight": 0.8}, {"name": "機敏性", "weight": 0.7}]
+    }
+  ]
+}

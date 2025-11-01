@@ -1,0 +1,518 @@
+{
+  "理論構築": {
+    "description": "複雑な情報から本質を抜き出し、自分なりの法則やモデルを組み立てるのが得意です。物事の「なぜ」を深く考えることを好みます。",
+    "related_fields": [
+      "人文探究",
+      "物理数理",
+      "社会分析",
+      "経済ビジネス"
+    ],
+    "learningContents": [
+      {
+        "title": "高校生のための物理学入門（gacco）",
+        "url": "https://lms.gacco.org/courses/course-v1:gacco+ga076+2022_06/about"
+      },
+      {
+        "title": "ロジカルシンキング入門（NHK for School）",
+        "url": "https://www2.nhk.or.jp/school/watch/clip/?id=clip_0200"
+      }
+    ],
+    "experienceEvents": [
+      {
+        "title": "東京大学 高校生のためのオープンキャンパス講義",
+        "url": "https://www.u-tokyo.ac.jp/focus/ja/events/z0108_00026.html"
+      },
+      {
+        "title": "日本物理学会 高校生セッション",
+        "url": "https://www.jps.or.jp/event/gakusei/highschool.php"
+      }
+    ]
+  },
+  "数理解析": {
+    "description": "データや数式を用いて、論理的に物事を分析・証明する力があります。客観的な根拠に基づいて判断することを重視します。",
+    "related_fields": [
+      "物理数理",
+      "経済ビジネス",
+      "情報科学",
+      "社会分析"
+    ],
+    "learningContents": [
+      {
+        "title": "UTokyo OCW『数学の世界』",
+        "url": "https://ocw.u-tokyo.ac.jp/course_136/"
+      },
+      {
+        "title": "ビッグデータ解析入門（統計数理研究所）",
+        "url": "https://www.ism.ac.jp/publicity/ISM-OPEN-COURSE.html"
+      }
+    ],
+    "experienceEvents": [
+      {
+        "title": "数学甲子園",
+        "url": "https://www.su-gaku.net/koshien/"
+      },
+      {
+        "title": "統計グランプリ",
+        "url": "https://www.jfssa.jp/"
+      }
+    ]
+  },
+  "実験操作": {
+    "description": "仮説を検証するために、丁寧な手つきで実験を設計・実行することができます。地道な作業を厭わず、再現性を重視します。",
+    "related_fields": [
+      "化学材料",
+      "生命医科学",
+      "物理数理",
+      "農環境"
+    ],
+    "learningContents": [
+      {
+        "title": "高校生のための化学実験動画（理研）",
+        "url": "https://www.riken.jp/outreach/events/education/highschool/"
+      },
+      {
+        "title": "サイエンスラボ実験ノート術",
+        "url": "https://kagakubu.jp/article/experiment-note"
+      }
+    ],
+    "experienceEvents": [
+      {
+        "title": "高校化学グランプリ",
+        "url": "https://www.chemistry.or.jp/activity/contest/chemistry-grandprix/"
+      },
+      {
+        "title": "サイエンスキャッスル 研究大会",
+        "url": "https://s-castle.com/"
+      }
+    ]
+  },
+  "観測調査": {
+    "description": "自然現象や社会の動きを注意深く観察し、記録・分析することが得意です。長期的な視点で変化の兆しを捉えることができます。",
+    "related_fields": [
+      "地球惑星",
+      "環境科学",
+      "社会分析",
+      "スポーツ科学"
+    ],
+    "learningContents": [
+      {
+        "title": "国立天文台 みんなの天文教室",
+        "url": "https://www.nao.ac.jp/education/"
+      },
+      {
+        "title": "気象庁 高校生向け観測ガイド",
+        "url": "https://www.jma.go.jp/jma/kishou/know/yougo/"
+      }
+    ],
+    "experienceEvents": [
+      {
+        "title": "地学オリンピック",
+        "url": "https://jeso.jp/"
+      },
+      {
+        "title": "高校生気象観測コンテスト",
+        "url": "https://www.jma-net.go.jp/ishigaki/contest/"
+      }
+    ]
+  },
+  "フィールドワーク": {
+    "description": "現場に足を運び、インタビューや参与観察を通じて、当事者の視点から課題の本質を探ることが得意です。",
+    "related_fields": [
+      "社会分析",
+      "農環境",
+      "デザイン思考",
+      "人文探究"
+    ],
+    "learningContents": [
+      {
+        "title": "地域探究ガイド（文部科学省）",
+        "url": "https://www.mext.go.jp/a_menu/ikusei/gakusyushien/mext_01520.html"
+      },
+      {
+        "title": "ESD for Youth 地域フィールド学習",
+        "url": "https://www.esd-j.org/program/youth/"
+      }
+    ],
+    "experienceEvents": [
+      {
+        "title": "全国高校生フォーラム（地域探究発表）",
+        "url": "https://www.jst.go.jp/csc/forum/"
+      },
+      {
+        "title": "JTB 地域体験プログラム",
+        "url": "https://www.jtb.co.jp/gakuryoku/chiiki/"
+      }
+    ]
+  },
+  "プロトタイピング": {
+    "description": "アイデアを素早く形にし、試作品を通じて検証と改善を繰り返すプロセスを好みます。手を動かしながら考えるのが得意です。",
+    "related_fields": [
+      "デジタル創造",
+      "情報科学",
+      "デザイン思考",
+      "化学材料"
+    ],
+    "learningContents": [
+      {
+        "title": "Arduino公式入門ガイド",
+        "url": "https://docs.arduino.cc/learn/starting-guide/whats-arduino/"
+      },
+      {
+        "title": "Fusion 360 チュートリアル（Autodesk）",
+        "url": "https://www.autodesk.co.jp/campaigns/design-academy"
+      }
+    ],
+    "experienceEvents": [
+      {
+        "title": "Maker Faire Tokyo 学生プロジェクト",
+        "url": "https://makezine.jp/event/mft2024/"
+      },
+      {
+        "title": "高校生ロボットアイデアコンテスト",
+        "url": "https://monodzukuricreator.jp/"
+      }
+    ]
+  },
+  "プログラミング": {
+    "description": "論理的な思考を元に、コンピュータに指示を与えて課題を解決するプロセスを楽しめます。効率や再利用性を考えた設計が得意です。",
+    "related_fields": [
+      "情報科学",
+      "デジタル創造",
+      "物理数理"
+    ],
+    "learningContents": [
+      {
+        "title": "Progate プログラミング学習",
+        "url": "https://prog-8.com/"
+      },
+      {
+        "title": "paizaラーニング 学生プラン",
+        "url": "https://paiza.jp/works"
+      }
+    ],
+    "experienceEvents": [
+      {
+        "title": "日本情報オリンピック（JOI）",
+        "url": "https://www.ioi-jp.org/"
+      },
+      {
+        "title": "技育CAMP ハッカソン",
+        "url": "https://talented.jp/geekcamp/"
+      }
+    ]
+  },
+  "表現制作": {
+    "description": "文章、映像、音楽、造形など、様々なメディアを用いて自分の考えや世界観を形にすることに喜びを感じます。",
+    "related_fields": [
+      "芸術実践",
+      "デジタル創造",
+      "文化批評",
+      "言語表現"
+    ],
+    "learningContents": [
+      {
+        "title": "NHK for School デザインのひみつ",
+        "url": "https://www2.nhk.or.jp/school/movie/bangumi.cgi?das_id=D0005220064_00000"
+      },
+      {
+        "title": "Adobe Express クリエイティブ入門",
+        "url": "https://www.adobe.com/jp/express/learn/students"
+      }
+    ],
+    "experienceEvents": [
+      {
+        "title": "全国高校生デザインコンテスト",
+        "url": "https://koukou-design.jp/"
+      },
+      {
+        "title": "U-18 国際映像コンテスト",
+        "url": "https://jidaikoushien.com/"
+      }
+    ]
+  },
+  "ファシリテーション": {
+    "description": "多様な意見を持つ人々の対話を促し、議論を構造化して合意形成へと導く力があります。",
+    "related_fields": [
+      "教育革新",
+      "デザイン思考",
+      "社会分析",
+      "文化産業"
+    ],
+    "learningContents": [
+      {
+        "title": "日本ファシリテーション協会 ナレッジベース",
+        "url": "https://www.faj.or.jp/knowledge/"
+      },
+      {
+        "title": "SDGsワークショップ事例集",
+        "url": "https://www.sdgs-japan.net/activity/"
+      }
+    ],
+    "experienceEvents": [
+      {
+        "title": "高校生模擬国連",
+        "url": "https://jmun.jp/"
+      },
+      {
+        "title": "地域対話ワークショップ まちカフェ",
+        "url": "https://machicafe.jp/"
+      }
+    ]
+  },
+  "マネジメント": {
+    "description": "目標達成のために、人・モノ・金・情報といったリソースを管理し、計画的にプロジェクトを推進することができます。",
+    "related_fields": [
+      "経済ビジネス",
+      "プロダクトマネジメント",
+      "情報科学"
+    ],
+    "learningContents": [
+      {
+        "title": "日経カレッジカフェ マネジメント講座",
+        "url": "https://college.nikkei.co.jp/"
+      },
+      {
+        "title": "マイプロジェクト計画シート",
+        "url": "https://myprojects.jp/tool/"
+      }
+    ],
+    "experienceEvents": [
+      {
+        "title": "高校生ビジネスプラン・グランプリ",
+        "url": "https://www.jfn.co.jp/bizcon/"
+      },
+      {
+        "title": "ジュニアアチーブメント 会社経営体験",
+        "url": "https://www.ja-japan.org/program/"
+      }
+    ]
+  },
+  "コミュニケーション": {
+    "description": "専門的な内容を分かりやすく伝えたり、背景の異なる人々の間の橋渡しをしたりすることが得意です。",
+    "related_fields": [
+      "言語表現",
+      "教育革新",
+      "国際協力",
+      "文化産業"
+    ],
+    "learningContents": [
+      {
+        "title": "NHK for School コミュニケーション英語",
+        "url": "https://www2.nhk.or.jp/school/lesson/detail.cgi?lesson=english"
+      },
+      {
+        "title": "TED-Ed 学生向けスピーチ教材",
+        "url": "https://ed.ted.com/"
+      }
+    ],
+    "experienceEvents": [
+      {
+        "title": "NHK全国高校放送コンテスト",
+        "url": "https://www.nhk.or.jp/school/contest/"
+      },
+      {
+        "title": "ディベート甲子園",
+        "url": "https://www.jara.jp/debate/"
+      }
+    ]
+  },
+  "ドキュメンテーション": {
+    "description": "議論の記録や調査結果などを、後から誰が見ても分かるように構造化して記録・整理する作業を厭いません。",
+    "related_fields": [
+      "人文探究",
+      "政治法制度",
+      "社会分析",
+      "研究職"
+    ],
+    "learningContents": [
+      {
+        "title": "Google News Initiative 記事づくり講座",
+        "url": "https://newsinitiative.withgoogle.com/intl/ja-jp/training/"
+      },
+      {
+        "title": "東京写真美術館 記録写真講座",
+        "url": "https://topmuseum.jp/contents/programs/others/"
+      }
+    ],
+    "experienceEvents": [
+      {
+        "title": "朝日新聞 高校生新聞制作コンテスト",
+        "url": "https://www.asahi.com/edu/studentaward/"
+      },
+      {
+        "title": "全国高校Webコンテスト",
+        "url": "https://webcon.japias.jp/"
+      }
+    ]
+  },
+  "自己探究型": {
+    "description": "一人で深く思索する時間を通じて、自分の理解を深めたり、アイデアを発展させたりする学習スタイルを好みます。",
+    "related_fields": [
+      "人文探究",
+      "物理数理",
+      "芸術実践"
+    ],
+    "learningContents": [
+      {
+        "title": "マイプロジェクトヒストリー",
+        "url": "https://myprojects.jp/history/"
+      },
+      {
+        "title": "キャリア探究ガイド（リクルート）",
+        "url": "https://souken.shingakunet.com/career/2023/01/post-102.html"
+      }
+    ],
+    "experienceEvents": [
+      {
+        "title": "全国高校生マイプロジェクトアワード",
+        "url": "https://myprojects.jp/award/"
+      },
+      {
+        "title": "高校生未来会議",
+        "url": "https://mirai-kaigi.jp/"
+      }
+    ]
+  },
+  "協働探究型": {
+    "description": "他者との対話や議論を通じて、多様な視点を取り入れながら、一人では到達できない結論にたどり着くプロセスを重視します。",
+    "related_fields": [
+      "デザイン思考",
+      "社会分析",
+      "教育革新"
+    ],
+    "learningContents": [
+      {
+        "title": "協働学習デザインハンドブック",
+        "url": "https://www.jst.go.jp/csc/handbook/"
+      },
+      {
+        "title": "Team-Based Learning 入門",
+        "url": "https://tblj.org/"
+      }
+    ],
+    "experienceEvents": [
+      {
+        "title": "探究甲子園",
+        "url": "https://www.tankyu-koshien.jp/"
+      },
+      {
+        "title": "Youth Co:Lab ソーシャルアイデアチャレンジ",
+        "url": "https://www.youthcolabjp.com/"
+      }
+    ]
+  },
+  "体験実践型": {
+    "description": "まずやってみる、という姿勢を大切にし、実際の体験や試行錯誤の中から学ぶことを得意とします。",
+    "related_fields": [
+      "農環境",
+      "スポーツ科学",
+      "芸術実践",
+      "フィールドワーク"
+    ],
+    "learningContents": [
+      {
+        "title": "サイエンスキャンプ学習ノート",
+        "url": "https://rikochallenge.jp/program/sciencecamp/"
+      },
+      {
+        "title": "リアルワールド探究プログラム",
+        "url": "https://realworld-edu.jp/"
+      }
+    ],
+    "experienceEvents": [
+      {
+        "title": "サマーサイエンスキャンプ",
+        "url": "https://www.jst.go.jp/cpse/sciencecamp/"
+      },
+      {
+        "title": "高校生ものづくりコンテスト",
+        "url": "https://www.monocon.jp/"
+      }
+    ]
+  },
+  "理論重視型": {
+    "description": "物事に取り組む前に、まずその背景にある理論や全体像を体系的に理解することで、安心して実践に進むことができます。",
+    "related_fields": [
+      "物理数理",
+      "経済ビジネス",
+      "法学",
+      "情報科学"
+    ],
+    "learningContents": [
+      {
+        "title": "MIT OCW Physics I",
+        "url": "https://ocw.mit.edu/courses/physics/"
+      },
+      {
+        "title": "京都大学OCW 先端数理科学",
+        "url": "https://ocw.kyoto-u.ac.jp/course/07079"
+      }
+    ],
+    "experienceEvents": [
+      {
+        "title": "物理チャレンジ",
+        "url": "https://www.jpho.jp/"
+      },
+      {
+        "title": "日本数学オリンピック",
+        "url": "https://www.imojp.org/"
+      }
+    ]
+  },
+  "創造表現型": {
+    "description": "自分の考えやアイデアを、絵や図、文章、試作品など、何らかの形でアウトプットすることで思考を整理し、深めていきます。",
+    "related_fields": [
+      "デジタル創造",
+      "芸術実践",
+      "デザイン思考"
+    ],
+    "learningContents": [
+      {
+        "title": "YouFab Creative Awards アーカイブ",
+        "url": "https://www.youfab.info/archive"
+      },
+      {
+        "title": "文化庁メディア芸術祭 学習資料",
+        "url": "https://j-mediaarts.jp/learn/"
+      }
+    ],
+    "experienceEvents": [
+      {
+        "title": "全国高等学校デザイン選手権大会",
+        "url": "https://www.kosen-kagaku.ac.jp/design/"
+      },
+      {
+        "title": "高校生国際美術展",
+        "url": "https://www.koukibi.jp/"
+      }
+    ]
+  },
+  "継続改善型": {
+    "description": "一度きりの結果で終わらせず、定期的に振り返りを行い、次のアクションを計画・実行するサイクルを回すことを得意とします。",
+    "related_fields": [
+      "情報科学",
+      "化学材料",
+      "スポーツ科学"
+    ],
+    "learningContents": [
+      {
+        "title": "トヨタ生産方式入門",
+        "url": "https://www.toyota.co.jp/jpn/company/vision/justintime/tps.html"
+      },
+      {
+        "title": "PDCAで学ぶ課題解決（経産省）",
+        "url": "https://www.meti.go.jp/policy/servicepolicy/education/pdca.html"
+      }
+    ],
+    "experienceEvents": [
+      {
+        "title": "高校生生産性向上グランプリ",
+        "url": "https://www.jpc-net.jp/college/"
+      },
+      {
+        "title": "ソーシャルイノベーションチャレンジ",
+        "url": "https://www.social-innovation.jp/"
+      }
+    ]
+  }
+}

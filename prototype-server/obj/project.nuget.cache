@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "JXJ6rP8yC54=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\yamak\\Downloads\\分野サーチ\\prototype-server\\prototype-server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\yamak\\.nuget\\packages\\microsoft.aspnetcore.spaservices.extensions\\8.0.7\\microsoft.aspnetcore.spaservices.extensions.8.0.7.nupkg.sha512",
+    "C:\\Users\\yamak\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\8.0.0\\microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\yamak\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\8.0.0\\microsoft.extensions.fileproviders.physical.8.0.0.nupkg.sha512",
+    "C:\\Users\\yamak\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\8.0.0\\microsoft.extensions.filesystemglobbing.8.0.0.nupkg.sha512",
+    "C:\\Users\\yamak\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

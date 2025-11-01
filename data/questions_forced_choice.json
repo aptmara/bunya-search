@@ -1,0 +1,765 @@
+﻿{
+  "metadata": {
+    "version": "2024-11-02",
+    "language": "ja",
+    "defaultPrompt": "より自分に近い選択肢を選んでください。",
+    "confidenceLevels": [
+      {"key": "high", "label": "とても自信がある", "multiplier": 1.0},
+      {"key": "mid", "label": "まあ自信がある", "multiplier": 0.7},
+      {"key": "low", "label": "あまり自信がない", "multiplier": 0.5}
+    ]
+  },
+  "items": [
+    {
+      "id": "FC-01",
+      "required": true,
+      "prompt": "どちらの活動により強く惹かれますか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "詳細な史料を読み込み、歴史的事実の関係を整理する。",
+          "primary": {"axis": "interest", "category": "人文探究", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "理論構築", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "史料読解", "weight": 1.0}, {"name": "歴史学", "weight": 0.8}, {"name": "人文学", "weight": 0.7}, {"name": "文献調査", "weight": 0.9}]
+        },
+        {
+          "key": "B",
+          "label": "現場の声を集め、政策提案のアイデアを練る。",
+          "primary": {"axis": "interest", "category": "社会分析", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "career", "category": "公共政策", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "フィールド調査", "weight": 1.0}, {"name": "インタビュー", "weight": 0.8}, {"name": "政策検討", "weight": 1.0}, {"name": "社会課題", "weight": 0.9}]
+        }
+      ]
+    },
+    {
+      "id": "FC-02",
+      "required": true,
+      "prompt": "研究スタイルとして近いのはどちらですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "実験装置を丁寧に調整し、データを地道に集める。",
+          "primary": {"axis": "activity", "category": "実験操作", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "interest", "category": "生命医科学", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "実験", "weight": 1.0}, {"name": "データ収集", "weight": 0.9}, {"name": "装置調整", "weight": 1.0}, {"name": "再現性", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "コンピュータ上で仮想モデルを組み、理論的に検証する。",
+          "primary": {"axis": "activity", "category": "数理解析", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "interest", "category": "情報科学", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "数理モデル", "weight": 1.0}, {"name": "シミュレーション", "weight": 1.0}, {"name": "理論物理", "weight": 0.8}, {"name": "計算科学", "weight": 0.9}]
+        }
+      ]
+    },
+    {
+      "id": "FC-03",
+      "required": true,
+      "prompt": "アウトプットの志向として近いのはどちらですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "クリエイティブ作品で感情や世界観を表現したい。",
+          "primary": {"axis": "interest", "category": "芸術実践", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "表現制作", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "表現", "weight": 1.0}, {"name": "アート", "weight": 0.9}, {"name": "作品制作", "weight": 1.0}, {"name": "創造性", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "分析レポートで論理的に説得したい。",
+          "primary": {"axis": "activity", "category": "ドキュメンテーション", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "経済成果", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "レポート", "weight": 1.0}, {"name": "論理展開", "weight": 1.0}, {"name": "データ分析", "weight": 0.9}, {"name": "説得", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "FC-04",
+      "required": true,
+      "prompt": "学内外の活動でよりやりたいのはどちらですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "地域イベントを企画し、多くの人を巻き込む。",
+          "primary": {"axis": "career", "category": "文化産業", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "ファシリテーション", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "イベント企画", "weight": 1.0}, {"name": "地域連携", "weight": 1.0}, {"name": "プロデュース", "weight": 0.9}, {"name": "巻き込み力", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "研究室で静かに課題に向き合い、成果を積み上げる。",
+          "primary": {"axis": "career", "category": "研究職", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "learning_style", "category": "自己探究型", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "研究集中", "weight": 1.0}, {"name": "分析", "weight": 0.9}, {"name": "専門性", "weight": 0.8}, {"name": "個人作業", "weight": 1.0}]
+        }
+      ]
+    },
+    {
+      "id": "FC-05",
+      "required": true,
+      "prompt": "挑戦したいテーマに近いのはどちらですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "未知の数式に挑戦し、新しい解法を編み出す。",
+          "primary": {"axis": "interest", "category": "物理数理", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "学術探究", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "数学", "weight": 1.0}, {"name": "理論探究", "weight": 1.0}, {"name": "数式", "weight": 0.9}, {"name": "問題解決", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "新しいサービスを市場で検証し、改善を重ねる。",
+          "primary": {"axis": "career", "category": "ビジネス起業", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "革新挑戦", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "サービス開発", "weight": 1.0}, {"name": "PDCA", "weight": 0.9}, {"name": "検証", "weight": 1.0}, {"name": "改善", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "FC-06",
+      "required": true,
+      "prompt": "社会課題への関わり方として近いのはどちらですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "医療現場の課題を調査し、改善提案をまとめる。",
+          "primary": {"axis": "interest", "category": "生命医科学", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "社会貢献", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "医療課題", "weight": 1.0}, {"name": "課題解決", "weight": 0.9}, {"name": "提案", "weight": 1.0}, {"name": "調査", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "環境保全プロジェクトを現場で率い、変化を起こす。",
+          "primary": {"axis": "interest", "category": "環境科学", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "フィールドワーク", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "環境保全", "weight": 1.0}, {"name": "リーダーシップ", "weight": 0.9}, {"name": "現場実践", "weight": 1.0}, {"name": "プロジェクト", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "FC-07",
+      "required": true,
+      "prompt": "働く環境として魅力を感じるのはどちらですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "多国籍チームで英語を使い、グローバルに協働する。",
+          "primary": {"axis": "values", "category": "グローバル", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "career", "category": "国際協力", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "多文化協働", "weight": 1.0}, {"name": "グローバル", "weight": 0.9}, {"name": "語学", "weight": 1.0}, {"name": "チームワーク", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "地域に根ざした活動で信頼関係を築く。",
+          "primary": {"axis": "values", "category": "地域密着", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "career", "category": "公共政策", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "地域協働", "weight": 1.0}, {"name": "コミュニティ", "weight": 0.9}, {"name": "信頼構築", "weight": 1.0}, {"name": "関係性", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "FC-08",
+      "required": true,
+      "prompt": "成果の発信方法として近いのはどちらですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "研究成果を学会で発表し、専門家と議論する。",
+          "primary": {"axis": "career", "category": "研究職", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "表現制作", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "学会発表", "weight": 1.0}, {"name": "研究共有", "weight": 1.0}, {"name": "専門家", "weight": 0.9}, {"name": "議論", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "プロダクトをリリースし、ユーザーの反応を観察する。",
+          "primary": {"axis": "career", "category": "技術開発", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "革新挑戦", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "プロダクト開発", "weight": 1.0}, {"name": "ユーザー検証", "weight": 1.0}, {"name": "フィードバック", "weight": 0.9}, {"name": "市場投入", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "FC-09",
+      "required": true,
+      "prompt": "教育活動でより力を入れたいのはどちらですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "教材や授業案を事前に緻密に準備する。",
+          "primary": {"axis": "activity", "category": "ドキュメンテーション", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "career", "category": "教育支援", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "教材開発", "weight": 1.0}, {"name": "計画性", "weight": 0.9}, {"name": "準備", "weight": 1.0}, {"name": "丁寧さ", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "その場で柔軟にワークショップを回し、学びを引き出す。",
+          "primary": {"axis": "activity", "category": "ファシリテーション", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "learning_style", "category": "協働探究型", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "ワークショップ", "weight": 1.0}, {"name": "即興性", "weight": 0.9}, {"name": "柔軟対応", "weight": 1.0}, {"name": "参加型", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "FC-10",
+      "required": true,
+      "prompt": "作業スタイルとして当てはまるのはどちらですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "集中して一人で試行錯誤を続ける。",
+          "primary": {"axis": "learning_style", "category": "自己探究型", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "学術探究", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "個人探究", "weight": 1.0}, {"name": "没頭", "weight": 0.9}, {"name": "集中", "weight": 1.0}, {"name": "試行錯誤", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "チームで役割分担しながら成果を出す。",
+          "primary": {"axis": "learning_style", "category": "協働探究型", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "マネジメント", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "チームワーク", "weight": 1.0}, {"name": "協調性", "weight": 0.9}, {"name": "役割分担", "weight": 1.0}, {"name": "コミュニケーション", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "FC-11",
+      "required": true,
+      "prompt": "意思決定で重視するのはどちらですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "科学的根拠やデータに基づいて判断する。",
+          "primary": {"axis": "values", "category": "経済成果", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "数理解析", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "データ重視", "weight": 1.0}, {"name": "論理的思考", "weight": 0.9}, {"name": "科学的思考", "weight": 1.0}, {"name": "客観性", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "直感や感性に従って選択する。",
+          "primary": {"axis": "values", "category": "芸術性", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "interest", "category": "芸術実践", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "感性", "weight": 1.0}, {"name": "ひらめき", "weight": 0.9}, {"name": "直感判断", "weight": 1.0}, {"name": "主観性", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "FC-12",
+      "required": true,
+      "prompt": "日々の記録スタイルとして近いのはどちらですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "観察日誌を継続的に記録し続ける。",
+          "primary": {"axis": "activity", "category": "観測調査", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "learning_style", "category": "継続改善型", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "観察日誌", "weight": 1.0}, {"name": "記録", "weight": 0.9}, {"name": "継続記録", "weight": 1.0}, {"name": "定点観測", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "デジタルツールでまとめ資料を作成する。",
+          "primary": {"axis": "activity", "category": "ドキュメンテーション", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "自由裁量", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "デジタル整理", "weight": 1.0}, {"name": "情報整理", "weight": 0.9}, {"name": "資料作成", "weight": 1.0}, {"name": "効率化", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "FC-13",
+      "required": true,
+      "prompt": "働き方の志向として近いのはどちらですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "国際的な課題に挑むNGOの活動に参加したい。",
+          "primary": {"axis": "values", "category": "社会貢献", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "career", "category": "国際協力", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "NGO", "weight": 1.0}, {"name": "社会貢献", "weight": 0.9}, {"name": "国際課題", "weight": 1.0}, {"name": "ボランティア", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "国内企業で安定的に働き、生活基盤を築きたい。",
+          "primary": {"axis": "values", "category": "安定志向", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "career", "category": "専門職", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "安定就職", "weight": 1.0}, {"name": "大企業", "weight": 0.9}, {"name": "生活基盤", "weight": 1.0}, {"name": "福利厚生", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "FC-14",
+      "required": true,
+      "prompt": "成果に求める価値として近いのはどちらですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "学術的な問いに焦点を絞り、真理を追究したい。",
+          "primary": {"axis": "values", "category": "学術探究", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "interest", "category": "人文探究", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "学術的価値", "weight": 1.0}, {"name": "研究", "weight": 0.9}, {"name": "真理追究", "weight": 1.0}, {"name": "知的好奇心", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "市場ニーズに基づいて製品を改善し、成果を出したい。",
+          "primary": {"axis": "values", "category": "経済成果", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "career", "category": "技術開発", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "市場分析", "weight": 1.0}, {"name": "ビジネス", "weight": 0.9}, {"name": "製品改善", "weight": 1.0}, {"name": "成果主義", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "FC-15",
+      "required": true,
+      "prompt": "表現を社会につなぐ方法として近いのはどちらですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "アート作品の展示を企画し、来場者へ体験を届けたい。",
+          "primary": {"axis": "career", "category": "文化産業", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "interest", "category": "芸術実践", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "展示企画", "weight": 1.0}, {"name": "アートマネジメント", "weight": 1.0}, {"name": "キュレーション", "weight": 0.9}, {"name": "体験デザイン", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "科学イベントで実験を披露し、学びを広げたい。",
+          "primary": {"axis": "career", "category": "教育支援", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "表現制作", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "科学コミュニケーション", "weight": 1.0}, {"name": "アウトリーチ", "weight": 0.9}, {"name": "体験教育", "weight": 1.0}, {"name": "普及活動", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "FC-16",
+      "required": true,
+      "prompt": "プロジェクトで担いたい役割に近いのはどちらですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "プロジェクトの予算や工数を管理し、全体を俯瞰したい。",
+          "primary": {"axis": "activity", "category": "マネジメント", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "経済成果", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "予算管理", "weight": 1.0}, {"name": "プロジェクトマネジメント", "weight": 0.9}, {"name": "全体調整", "weight": 1.0}, {"name": "計画性", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "技術的な課題解決に没頭し、品質を高めたい。",
+          "primary": {"axis": "activity", "category": "プログラミング", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "革新挑戦", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "技術課題", "weight": 1.0}, {"name": "専門性", "weight": 0.9}, {"name": "品質向上", "weight": 1.0}, {"name": "実装", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "FC-17",
+      "required": true,
+      "prompt": "調査の進め方として近いのはどちらですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "フィールドワークで生活者の行動を観察し、洞察を得る。",
+          "primary": {"axis": "activity", "category": "フィールドワーク", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "地域密着", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "フィールドワーク", "weight": 1.0}, {"name": "質的調査", "weight": 0.9}, {"name": "観察", "weight": 1.0}, {"name": "エスノグラフィ", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "シミュレーションで仮説を検証し、モデルを磨く。",
+          "primary": {"axis": "activity", "category": "数理解析", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "interest", "category": "情報科学", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "シミュレーション", "weight": 1.0}, {"name": "仮説検証", "weight": 0.9}, {"name": "モデル検証", "weight": 1.0}, {"name": "理論", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "FC-18",
+      "required": true,
+      "prompt": "倫理的な課題への向き合い方として近いのはどちらですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "医療倫理について議論し、現場の視点を反映させたい。",
+          "primary": {"axis": "values", "category": "公共性", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "interest", "category": "生命医科学", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "医療倫理", "weight": 1.0}, {"name": "生命倫理", "weight": 0.9}, {"name": "現場視点", "weight": 1.0}, {"name": "合意形成", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "AI倫理の指針を設計し、新技術のリスクを管理したい。",
+          "primary": {"axis": "values", "category": "革新挑戦", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "interest", "category": "情報科学", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "AI倫理", "weight": 1.0}, {"name": "情報倫理", "weight": 0.9}, {"name": "リスク設計", "weight": 1.0}, {"name": "ガイドライン", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "FC-19",
+      "required": false,
+      "prompt": "どちらのアウトリーチ活動に魅力を感じますか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "科学館の展示を監修し、来館者の学びを支援する。",
+          "primary": {"axis": "career", "category": "教育支援", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "interest", "category": "教育革新", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "科学館", "weight": 1.0}, {"name": "科学コミュニケーション", "weight": 0.9}, {"name": "展示監修", "weight": 1.0}, {"name": "教育普及", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "スタートアップの資金調達を計画し、成長戦略を描く。",
+          "primary": {"axis": "career", "category": "ビジネス起業", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "経済成果", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "資金調達", "weight": 1.0}, {"name": "ベンチャーキャピタル", "weight": 0.9}, {"name": "成長戦略", "weight": 1.0}, {"name": "事業計画", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "FC-20",
+      "required": false,
+      "prompt": "環境課題へのアプローチとして近いのはどちらですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "環境データを用いたモデル構築に没頭する。",
+          "primary": {"axis": "interest", "category": "環境科学", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "数理解析", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "環境データ", "weight": 1.0}, {"name": "環境モデリング", "weight": 0.9}, {"name": "モデル構築", "weight": 1.0}, {"name": "データ分析", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "住民参加型ワークショップで課題を抽出する。",
+          "primary": {"axis": "activity", "category": "ファシリテーション", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "地域密着", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "住民参加", "weight": 1.0}, {"name": "合意形成", "weight": 0.9}, {"name": "課題抽出", "weight": 1.0}, {"name": "ワークショップ", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "FC-21",
+      "required": false,
+      "prompt": "データ分析で重視したい対象はどちらですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "アスリートの動作を計測し、トレーニング理論を磨く。",
+          "primary": {"axis": "interest", "category": "スポーツ科学", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "観測調査", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "スポーツ分析", "weight": 1.0}, {"name": "バイオメカニクス", "weight": 0.9}, {"name": "計測", "weight": 1.0}, {"name": "トレーニング理論", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "患者データを解析し、治療法の効果を検証する。",
+          "primary": {"axis": "interest", "category": "生命医科学", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "数理解析", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "臨床データ", "weight": 1.0}, {"name": "医療統計", "weight": 0.9}, {"name": "治療評価", "weight": 1.0}, {"name": "エビデンス", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "FC-22",
+      "required": false,
+      "prompt": "得意としたい知的作業はどちらですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "多言語の表現を比較し、最適な翻訳案を練る。",
+          "primary": {"axis": "interest", "category": "言語表現", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "コミュニケーション", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "翻訳", "weight": 1.0}, {"name": "言語学", "weight": 0.9}, {"name": "多言語", "weight": 1.0}, {"name": "表現", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "データ構造を設計し、高速処理を追求する。",
+          "primary": {"axis": "interest", "category": "情報科学", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "プログラミング", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "データ構造", "weight": 1.0}, {"name": "アルゴリズム", "weight": 0.9}, {"name": "最適化", "weight": 1.0}, {"name": "計算量", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "FC-23",
+      "required": false,
+      "prompt": "キャリアの軸として惹かれるのはどちらですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "舞台作品を演出し、観客に没入体験を提供する。",
+          "primary": {"axis": "interest", "category": "芸術実践", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "芸術性", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "舞台演出", "weight": 1.0}, {"name": "演劇", "weight": 0.9}, {"name": "没入体験", "weight": 1.0}, {"name": "観客", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "市場データから新しいビジネスチャンスを発掘する。",
+          "primary": {"axis": "interest", "category": "経済ビジネス", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "経済成果", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "市場分析", "weight": 1.0}, {"name": "マーケティング", "weight": 0.9}, {"name": "事業創出", "weight": 1.0}, {"name": "データドリブン", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "FC-24",
+      "required": false,
+      "prompt": "探究したいテーマとして近いのはどちらですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "授業デザインを刷新し、学習者の動機を高めたい。",
+          "primary": {"axis": "interest", "category": "教育革新", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "career", "category": "教育支援", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "授業デザイン", "weight": 1.0}, {"name": "教育工学", "weight": 0.9}, {"name": "動機づけ", "weight": 1.0}, {"name": "学習意欲", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "ポップカルチャーの潮流を批評し、社会的意味を分析したい。",
+          "primary": {"axis": "interest", "category": "文化批評", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "文化保全", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "文化批評", "weight": 1.0}, {"name": "カルチュラルスタディーズ", "weight": 0.9}, {"name": "社会分析", "weight": 1.0}, {"name": "メディア論", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "FC-25",
+      "required": false,
+      "prompt": "自然科学で惹かれる探究スタイルはどちらですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "地質コア試料から地球の歴史を読み解きたい。",
+          "primary": {"axis": "interest", "category": "地球惑星", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "観測調査", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "地質学", "weight": 1.0}, {"name": "古環境学", "weight": 0.9}, {"name": "惑星科学", "weight": 1.0}, {"name": "地球史", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "大気化学モデルで気候変動を予測したい。",
+          "primary": {"axis": "interest", "category": "環境科学", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "数理解析", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "大気化学", "weight": 1.0}, {"name": "気候モデリング", "weight": 0.9}, {"name": "気候モデル", "weight": 1.0}, {"name": "地球温暖化", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "FC-26",
+      "required": false,
+      "prompt": "サービス開発で担いたいのはどちらですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "ユーザー調査を踏まえてサービス全体を再設計したい。",
+          "primary": {"axis": "interest", "category": "デザイン思考", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "フィールドワーク", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "ユーザー調査", "weight": 1.0}, {"name": "UXリサーチ", "weight": 0.9}, {"name": "サービスデザイン", "weight": 1.0}, {"name": "リサーチ", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "プロダクトバックログを整理し、開発ロードマップを描きたい。",
+          "primary": {"axis": "career", "category": "プロダクトマネジメント", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "マネジメント", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "ロードマップ", "weight": 1.0}, {"name": "プロダクトマネジメント", "weight": 0.9}, {"name": "バックログ管理", "weight": 1.0}, {"name": "アジャイル", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "FC-27",
+      "required": false,
+      "prompt": "サステナブルな領域で重視したいのはどちらですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "スマートアグリ技術で農地の効率化を図りたい。",
+          "primary": {"axis": "interest", "category": "農環境", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "activity", "category": "プロトタイピング", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "スマートアグリ", "weight": 1.0}, {"name": "農業ICT", "weight": 0.9}, {"name": "効率化", "weight": 1.0}, {"name": "精密農業", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "再生可能エネルギーの導入計画を立案したい。",
+          "primary": {"axis": "interest", "category": "環境科学", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "持続可能性", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "再生可能エネルギー", "weight": 1.0}, {"name": "エネルギー政策", "weight": 0.9}, {"name": "導入計画", "weight": 1.0}, {"name": "カーボンニュートラル", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "FC-28",
+      "required": false,
+      "prompt": "社会課題へのアプローチとして近いのはどちらですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "社会課題のデータを分析し、政策提言をまとめる。",
+          "primary": {"axis": "interest", "category": "社会分析", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "公共性", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "政策提言", "weight": 1.0}, {"name": "EBPM", "weight": 0.9}, {"name": "データ分析", "weight": 1.0}, {"name": "社会課題", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "起業プランを描き、投資家にピッチする。",
+          "primary": {"axis": "career", "category": "ビジネス起業", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "革新挑戦", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "ピッチ", "weight": 1.0}, {"name": "資金調達", "weight": 0.9}, {"name": "起業計画", "weight": 1.0}, {"name": "ビジネスモデル", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "FC-29",
+      "required": false,
+      "prompt": "公共領域で担いたいのはどちらですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "地域行政と協働して条例づくりを進める。",
+          "primary": {"axis": "career", "category": "公共政策", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "公共性", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "条例策定", "weight": 1.0}, {"name": "立法", "weight": 0.9}, {"name": "地域行政", "weight": 1.0}, {"name": "地方自治", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "国際機関と連携し、越境課題をコーディネートする。",
+          "primary": {"axis": "career", "category": "国際協力", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "values", "category": "グローバル", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "国際機関", "weight": 1.0}, {"name": "国際関係", "weight": 0.9}, {"name": "越境課題", "weight": 1.0}, {"name": "コーディネーション", "weight": 0.8}]
+        }
+      ]
+    },
+    {
+      "id": "FC-30",
+      "required": false,
+      "prompt": "キャリア選択で優先したいのはどちらですか？",
+      "options": [
+        {
+          "key": "A",
+          "label": "確実性の高いキャリアパスを選び、専門性を磨きたい。",
+          "primary": {"axis": "values", "category": "安定志向", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "career", "category": "専門職", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "安定志向", "weight": 1.0}, {"name": "リスク回避", "weight": 0.9}, {"name": "専門性", "weight": 1.0}, {"name": "キャリアパス", "weight": 0.8}]
+        },
+        {
+          "key": "B",
+          "label": "未開拓領域でリスクを取りながら挑戦したい。",
+          "primary": {"axis": "values", "category": "革新挑戦", "score": 2, "weight": 1.0},
+          "secondary": [
+            {"axis": "risk", "category": "リスク大胆", "score": 1, "weight": 1.0}
+          ],
+          "tags": [{"name": "挑戦", "weight": 1.0}, {"name": "ベンチャー", "weight": 0.9}, {"name": "リスクテイク", "weight": 1.0}, {"name": "未開拓", "weight": 0.8}]
+        }
+      ]
+    }
+  ]
+}
+

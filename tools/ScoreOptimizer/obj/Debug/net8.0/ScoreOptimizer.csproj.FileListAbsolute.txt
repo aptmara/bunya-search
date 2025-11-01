@@ -1,0 +1,14 @@
+C:\Users\yamak\Downloads\分野サーチ\tools\ScoreOptimizer\obj\Debug\net8.0\ScoreOptimizer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yamak\Downloads\分野サーチ\tools\ScoreOptimizer\obj\Debug\net8.0\ScoreOptimizer.AssemblyInfoInputs.cache
+C:\Users\yamak\Downloads\分野サーチ\tools\ScoreOptimizer\obj\Debug\net8.0\ScoreOptimizer.AssemblyInfo.cs
+C:\Users\yamak\Downloads\分野サーチ\tools\ScoreOptimizer\obj\Debug\net8.0\ScoreOptimizer.csproj.CoreCompileInputs.cache
+C:\Users\yamak\Downloads\分野サーチ\tools\ScoreOptimizer\bin\Debug\net8.0\ScoreOptimizer.exe
+C:\Users\yamak\Downloads\分野サーチ\tools\ScoreOptimizer\bin\Debug\net8.0\ScoreOptimizer.deps.json
+C:\Users\yamak\Downloads\分野サーチ\tools\ScoreOptimizer\bin\Debug\net8.0\ScoreOptimizer.runtimeconfig.json
+C:\Users\yamak\Downloads\分野サーチ\tools\ScoreOptimizer\bin\Debug\net8.0\ScoreOptimizer.dll
+C:\Users\yamak\Downloads\分野サーチ\tools\ScoreOptimizer\bin\Debug\net8.0\ScoreOptimizer.pdb
+C:\Users\yamak\Downloads\分野サーチ\tools\ScoreOptimizer\obj\Debug\net8.0\ScoreOptimizer.dll
+C:\Users\yamak\Downloads\分野サーチ\tools\ScoreOptimizer\obj\Debug\net8.0\refint\ScoreOptimizer.dll
+C:\Users\yamak\Downloads\分野サーチ\tools\ScoreOptimizer\obj\Debug\net8.0\ScoreOptimizer.pdb
+C:\Users\yamak\Downloads\分野サーチ\tools\ScoreOptimizer\obj\Debug\net8.0\ScoreOptimizer.genruntimeconfig.cache
+C:\Users\yamak\Downloads\分野サーチ\tools\ScoreOptimizer\obj\Debug\net8.0\ref\ScoreOptimizer.dll

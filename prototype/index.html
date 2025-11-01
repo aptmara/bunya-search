@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>分野診断プロトタイプ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      :root {
+        color-scheme: light dark;
+        font-family: "Segoe UI", sans-serif;
+      }
+      body {
+        margin: 0;
+        background: #f5f7fa;
+        color: #1e293b;
+      }
+      header {
+        background: #1d4ed8;
+        color: #fff;
+        padding: 16px 24px;
+      }
+      main {
+        max-width: 960px;
+        margin: 24px auto 64px;
+        padding: 0 16px;
+      }
+      .card {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+        padding: 24px;
+        margin-bottom: 24px;
+      }
+      .progress {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 16px;
+        align-items: center;
+      }
+      .progress-bar {
+        flex: 1;
+        height: 8px;
+        background: #e2e8f0;
+        border-radius: 999px;
+        overflow: hidden;
+      }
+      .progress-bar span {
+        display: block;
+        height: 100%;
+        width: 0%;
+        background: linear-gradient(90deg, #2563eb, #38bdf8);
+        transition: width 0.3s ease;
+      }
+      .question {
+        margin-top: 16px;
+      }
+      .likert-scale {
+        display: flex;
+        justify-content: space-between;
+        gap: 4px;
+        margin-top: 12px;
+      }
+      .likert-scale button {
+        flex: 1;
+        padding: 10px 0;
+        border-radius: 6px;
+        border: 1px solid #cbd5f5;
+        background: #fff;
+        cursor: pointer;
+        transition: transform 0.15s ease, background 0.3s ease, border 0.3s ease;
+      }
+      .likert-scale button:hover {
+        transform: translateY(-2px);
+        border-color: #2563eb;
+      }
+      .likert-scale button.is-active {
+        background: #2563eb;
+        color: #fff;
+        border-color: #1d4ed8;
+      }
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        margin-top: 32px;
+      }
+      .nav button {
+        flex: 1;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        cursor: pointer;
+        background: #2563eb;
+        color: #fff;
+        transition: opacity 0.2s ease;
+      }
+      .nav button:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+      }
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #e0f2fe;
+        color: #0369a1;
+        border-radius: 999px;
+        padding: 4px 12px;
+        font-size: 0.85rem;
+        font-weight: 600;
+      }
+      footer {
+        text-align: center;
+        font-size: 0.8rem;
+        padding: 24px 16px 48px;
+        color: #64748b;
+      }
+      @media (max-width: 640px) {
+        .likert-scale {
+          flex-wrap: wrap;
+        }
+        .likert-scale button {
+          flex: 1 0 calc(50% - 4px);
+        }
+        .nav button {
+          flex: 1 0 48%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>大学分野診断（プロトタイプ）</h1>
+      <p>興味・適性・価値観・キャリア志向を多面的に可視化します。</p>
+    </header>
+    <main>
+      <section class="card" id="intro">
+        <h2>ステップ概要</h2>
+        <p>全体で約15〜18分が目安です。途中保存に対応する想定で UI を設計しています。</p>
+        <ul>
+          <li>Likert質問（7件法）：必須84問＋補完15問</li>
+          <li>強制選択（Forced-choice）：必須18問＋補完12問</li>
+          <li>シナリオ選択：必須6問＋補完9問</li>
+        </ul>
+        <button id="start-btn">診断を開始する</button>
+      </section>
+
+      <section class="card" id="question-card" hidden>
+        <div class="progress">
+          <strong id="progress-label">興味 1 / 42</strong>
+          <div class="progress-bar"><span id="progress-bar"></span></div>
+        </div>
+        <div class="pill" id="axis-pill">興味 / 人文探究</div>
+        <div class="question">
+          <h2 id="question-text">未知の史料を読み解き、歴史解釈を再構築する過程に強い魅力を感じる。</h2>
+          <p id="question-meta">推奨回答時間：約20秒 / 逆転項目: いいえ</p>
+          <div class="likert-scale" role="group" aria-labelledby="question-text">
+            <button data-value="1">まったく当てはまらない</button>
+            <button data-value="2">あまり当てはまらない</button>
+            <button data-value="3">やや当てはまらない</button>
+            <button data-value="4">どちらとも言えない</button>
+            <button data-value="5">やや当てはまる</button>
+            <button data-value="6">当てはまる</button>
+            <button data-value="7">とても当てはまる</button>
+          </div>
+        </div>
+        <div class="nav">
+          <button id="prev-btn" type="button">戻る</button>
+          <button id="next-btn" type="button">次へ</button>
+        </div>
+      </section>
+
+      <section class="card" id="result-card" hidden>
+        <h2>診断結果（サンプル）</h2>
+        <div id="result-summary">
+          <p>レーダーチャート、ヒートマップ、関連分野リストをここに描画予定です。</p>
+        </div>
+        <button id="restart-btn">最初からやり直す</button>
+      </section>
+    </main>
+    <footer>
+      <p>© 2024 分野サーチ. プロトタイプのためデータはブラウザ内でのみ保持されます。</p>
+    </footer>
+
+    <script>
+      const startBtn = document.getElementById("start-btn");
+      const intro = document.getElementById("intro");
+      const questionCard = document.getElementById("question-card");
+      const resultCard = document.getElementById("result-card");
+      const progressLabel = document.getElementById("progress-label");
+      const progressBar = document.getElementById("progress-bar");
+      const axisPill = document.getElementById("axis-pill");
+      const questionText = document.getElementById("question-text");
+      const questionMeta = document.getElementById("question-meta");
+      const likertButtons = Array.from(
+        questionCard.querySelectorAll(".likert-scale button")
+      );
+      const prevBtn = document.getElementById("prev-btn");
+      const nextBtn = document.getElementById("next-btn");
+      const restartBtn = document.getElementById("restart-btn");
+      const resultSummary = document.getElementById("result-summary");
+      const TOTAL_TARGET = 42; // 興味軸の必須設問数
+
+      const state = {
+        queue: [],
+        answeredOrder: [],
+        answers: {},
+        axisStats: new Map(),
+        responseMeta: new Map(),
+        current: null,
+        questionStart: null,
+      };
+
+      async function loadQuestionBank() {
+        const response = await fetch("../data/questions_likert.json");
+        const json = await response.json();
+        const required = json.items.filter((item) => item.required);
+        const optional = json.items.filter((item) => !item.required);
+
+        state.queue = [...required, ...optional];
+        state.queue.forEach((item) => {
+          state.axisStats.set(item.axis, { sum: 0, count: 0 });
+        });
+      }
+
+      function scoreAxis(axis, responseValue, polarity) {
+        const stats = state.axisStats.get(axis) ?? { sum: 0, count: 0 };
+        const normalized =
+          polarity === "reverse" ? 8 - responseValue : responseValue;
+        stats.sum += normalized;
+        stats.count += 1;
+        state.axisStats.set(axis, stats);
+      }
+
+      function informationGain(item) {
+        const stats = state.axisStats.get(item.axis);
+        if (!stats || stats.count === 0) {
+          return 1.0;
+        }
+        const average = stats.sum / stats.count;
+        const mid = 4; // Likert中央値
+        const gap = Math.abs(mid - average);
+        const weight =
+          (item.relatedCategories?.reduce((acc, cat) => acc + cat.weight, 0) ??
+            0) + 1;
+        return gap * weight;
+      }
+
+      function selectNextQuestion() {
+\tconst unanswered = state.queue.filter(
+          (item) => !state.answeredOrder.includes(item.id)
+        );
+        if (unanswered.length === 0) {
+          return null;
+        }
+        return unanswered
+          .map((item) => ({
+            item,
+            info: informationGain(item),
+          }))
+          .sort((a, b) => b.info - a.info)[0].item;
+      }
+
+      function updateQuestionCard() {
+        if (!state.current) {
+          questionCard.hidden = true;
+          resultCard.hidden = false;
+          renderResultSummary();
+          return;
+        }
+        const answeredCount = state.answeredOrder.length;
+        progressLabel.textContent = `興味 ${answeredCount + 1} / ${TOTAL_TARGET}`;
+        progressBar.style.width = `${((answeredCount + 1) / TOTAL_TARGET) * 100}%`;
+
+        axisPill.textContent = `${state.current.axis} / ${state.current.primaryCategory}`;
+        questionText.textContent = state.current.prompt;
+        questionMeta.textContent = `推奨回答時間：約20秒 / 逆転項目: ${
+          state.current.polarity === "reverse" ? "はい" : "いいえ"
+        }`;
+
+        const previousValue = state.answers[state.current.id];
+        likertButtons.forEach((btn) => {
+          btn.classList.toggle(
+            "is-active",
+            Number(btn.dataset.value) === previousValue
+          );
+        });
+
+        prevBtn.disabled = state.answeredOrder.length === 0;
+        state.questionStart = performance.now();
+      }
+
+      likertButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const value = Number(btn.dataset.value);
+          state.answers[state.current.id] = value;
+          if (!state.answeredOrder.includes(state.current.id)) {
+            state.answeredOrder.push(state.current.id);
+          }
+          scoreAxis(state.current.axis, value, state.current.polarity);
+          const elapsed =
+            state.questionStart != null
+              ? Math.max(0, performance.now() - state.questionStart)
+              : null;
+          state.responseMeta.set(state.current.id, {
+            timeMs: elapsed,
+            confidence: 1,
+          });
+          nextBtn.disabled = false;
+        });
+      });
+
+      nextBtn.addEventListener("click", () => {
+        if (!state.current || !state.answers[state.current.id]) {
+          return;
+        }
+        state.current = selectNextQuestion();
+        if (!state.current || state.answeredOrder.length >= TOTAL_TARGET) {
+          questionCard.hidden = true;
+          resultCard.hidden = false;
+          renderResultSummary();
+          return;
+        }
+        nextBtn.disabled = true;
+        updateQuestionCard();
+     });
+
+      function renderResultSummary() {
+        const answeredCount = state.answeredOrder.length;
+        const avgTime =
+          Array.from(state.responseMeta.values())
+            .map((meta) => meta.timeMs ?? 0)
+            .filter((v) => v > 0)
+            .reduce((acc, cur, _, arr) => acc + cur / arr.length, 0) || 0;
+
+        const trustNote =
+          avgTime > 4000
+            ? "丁寧に回答されています。"
+            : avgTime < 1500
+            ? "回答が非常に速いため、再確認をおすすめします。"
+            : "適切なリズムで回答されています。";
+
+        const axisRows = Array.from(state.axisStats.entries()).map(
+          ([axis, stats]) => {
+            const average =
+              stats.count === 0 ? "-" : (stats.sum / stats.count).toFixed(2);
+            return `<tr><th>${axis}</th><td>${stats.count}</td><td>${average}</td></tr>`;
+          }
+        );
+
+        resultSummary.innerHTML = `
+          <p>回答数: ${answeredCount} / ${TOTAL_TARGET}</p>
+          <p>平均回答時間: ${(avgTime / 1000).toFixed(2)} 秒 (${trustNote})</p>
+          <table>
+            <thead><tr><th>軸</th><th>回答数</th><th>平均スコア(暫定)</th></tr></thead>
+            <tbody>${axisRows.join("")}</tbody>
+          </table>
+          <p>詳細スコアや信頼区間はサーバー側の解析ツール（ScoreOptimizer）で算出されます。</p>
+        `;
+      }
+
+      prevBtn.addEventListener("click", () => {
+        if (state.answeredOrder.length === 0) {
+          return;
+        }
+        const previousId = state.answeredOrder.pop();
+        delete state.answers[previousId];
+        state.responseMeta.delete(previousId);
+        state.current =
+          state.queue.find((item) => item.id === previousId) ?? state.current;
+        nextBtn.disabled = true;
+        updateQuestionCard();
+      });
+
+      restartBtn.addEventListener("click", () => {
+        state.queue = [];
+        state.answers = {};
+        state.axisStats = new Map();
+        state.answeredOrder = [];
+        state.responseMeta = new Map();
+        state.current = null;
+        resultCard.hidden = true;
+        intro.hidden = false;
+        startBtn.disabled = false;
+      });
+
+      startBtn.addEventListener("click", async () => {
+        startBtn.disabled = true;
+        intro.hidden = true;
+        questionCard.hidden = false;
+        if (state.queue.length === 0) {
+          await loadQuestionBank();
+        }
+        state.current = selectNextQuestion();
+        nextBtn.disabled = true;
+        updateQuestionCard();
+      });
+
+      document.addEventListener("DOMContentLoaded", async () => {
+        startBtn.disabled = true;
+        try {
+          await loadQuestionBank();
+          startBtn.disabled = false;
+        } catch (error) {
+          console.error("質問データの読み込みに失敗しました", error);
+          questionText.textContent =
+            "設問データの読み込みに失敗しました。サーバー経由でアクセスしてください。";
+          startBtn.disabled = true;
+        }
+      });
+    </script>
+  </body>
+</html>

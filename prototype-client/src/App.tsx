@@ -43,7 +43,10 @@ interface ForcedAnswerState {
   responseTimeMs?: number;
 }
 
-interface ScenarioAnswerState {\n  rankedOptions: string[];\n  responseTimeMs?: number;\n}
+interface ScenarioAnswerState {
+  rankedOptions: string[];
+  responseTimeMs?: number;
+}
 
 interface PersistedState {
   profile: ProfilePayload;

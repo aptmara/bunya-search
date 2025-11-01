@@ -149,45 +149,6 @@ function App() {
     }
   }, []);
 
-  useEffect(() => {
-    if (step !== 'result') {
-      setRecommendations([]);
-      setRecommendationError(null);
-      setRecommendationsLoading(false);
-      return;
-    }
-
-    if (topAptitudeKeys.length === 0) {
-      setRecommendations([]);
-      setRecommendationError(null);
-      setRecommendationsLoading(false);
-      return;
-    }
-
-    let active = true;
-    setRecommendationsLoading(true);
-    fetchRecommendations(topAptitudeKeys)
-      .then((items) => {
-        if (!active) return;
-        setRecommendations(items);
-        setRecommendationError(null);
-      })
-      .catch((err) => {
-        if (!active) return;
-        setRecommendations([]);
-        setRecommendationError(
-          err instanceof Error ? err.message : '進路候補の取得に失敗しました。',
-        );
-      })
-      .finally(() => {
-        if (!active) return;
-        setRecommendationsLoading(false);
-      });
-
-    return () => {
-      active = false;
-    };
-  }, [step, topAptitudeKeys]);
 
   const likertValueMap = useMemo(() => {
     const map: Record<string, { value: number }> = {};
@@ -389,6 +350,46 @@ function App() {
     () => aptitudeScores.slice(0, 3).map(([name]) => name),
     [aptitudeScores],
   );
+
+  useEffect(() => {
+    if (step !== 'result') {
+      setRecommendations([]);
+      setRecommendationError(null);
+      setRecommendationsLoading(false);
+      return;
+    }
+
+    if (topAptitudeKeys.length === 0) {
+      setRecommendations([]);
+      setRecommendationError(null);
+      setRecommendationsLoading(false);
+      return;
+    }
+
+    let active = true;
+    setRecommendationsLoading(true);
+    fetchRecommendations(topAptitudeKeys)
+      .then((items) => {
+        if (!active) return;
+        setRecommendations(items);
+        setRecommendationError(null);
+      })
+      .catch((err) => {
+        if (!active) return;
+        setRecommendations([]);
+        setRecommendationError(
+          err instanceof Error ? err.message : '進路候補の取得に失敗しました。',
+        );
+      })
+      .finally(() => {
+        if (!active) return;
+        setRecommendationsLoading(false);
+      });
+
+    return () => {
+      active = false;
+    };
+  }, [step, topAptitudeKeys]);
 
   const tagScores = useMemo(() => {
     const scores = new Map<string, { score: number; questions: string[] }>();
